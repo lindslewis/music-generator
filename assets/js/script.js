@@ -14,6 +14,38 @@ var btnS = document.querySelector("#OpenS")
     //liking song will store info to local storage (set.Item)
     //generate liked artist onto browser (?get.Item which will also store in browser for later)
     //triggers another modal w/ band discography(API?)
+
+
+    const options = {
+    method: 'GET',
+    headers: {
+        'X-RapidAPI-Key': '60e1f1e588mshbfdd753b6261471p19ccc5jsna4b5c34f4030',
+        'X-RapidAPI-Host': 'theaudiodb.p.rapidapi.com'
+    }
+};
+//LISTENER EVENT
+var searchTerm = 'jonas brothers'
+//needs to exist within function 
+fetch(`https://theaudiodb.p.rapidapi.com/discography.php?s=${searchTerm}`, options)
+    .then(function (response) {
+        return response.json()
+        //console.log(response.status)(to check for error codes)
+    })
+    .then(function (data) {
+        console.log(data)
+        for (let i = 0; i < data.album.length; i++) {
+            //for each item create an element (like h2)
+            //then set the text content for the newly created element for the current item in the array
+            //append that newly created element to the div
+            console.log(data.album[i].strAlbum)
+        }
+
+    })
+    .catch(function (er) {
+        console.log(er)
+    });
+
+    //console.log(data[i].album)
         
 
 //Type input into search/input window for upcoming concerts
