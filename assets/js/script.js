@@ -25,8 +25,4 @@ var btnS = document.querySelector("#OpenS")
     //TO DO: intial modal with song and (?)thumb art needs a click box
     //TO DO: another modal to present discography
     //TO DO: input text window for concert search
-<<<<<<< HEAD
     //TO DO: button to accompany the  input window
-=======
-    //TO DO: button to accompany the  input window
->>>>>>> 3e6931e59c49efb979176cdf0b5783428956ab43
