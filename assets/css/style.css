@@ -13,17 +13,37 @@
 
 
 /* for h1, gets the class "title is-1" */
+:root {
+    --background: #aac6b3;
+    --primary: #6a3937;
+    --accent: #023660;
+    --dark: #3b0d11;
+    --light: #f8A29D;
+}
 
-#pageContent {
-    background-image: url("/assets/images/splash.jpg");
-    background-color: lightskyblue;
+header {
+    margin: 0 2px 2px 2px;
+    padding: 1% 0 1% 5%;
+    background-image: linear-gradient(to right, var(--background), var(--light), var(--primary), var(--dark));
+}
+
+#titleHeader {
+    text-align: left;
+}
+
+body {
+    background-image: url("../images/background-2.jpg");
+    background-color: var(--background);
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
 
+#mainPage {
+    border-width: 2px;
+    border-color: black;
+}
 /* main {
     
 } */
-@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
 
