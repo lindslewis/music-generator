@@ -8,7 +8,7 @@ var btnS = document.querySelector("#OpenS")
 //listener event needs to include modal pop up
     //song provided (other steps may need to be added depending on how user is accessing the music)
     //stop and next
-
+//changing file
 //option to like song (Listener event click box)
     //if I like a song (could be if/ else if statements)
     //liking song will store info to local storage (set.Item)
