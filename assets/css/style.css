@@ -16,7 +16,7 @@
 
 body {
     background-color: lightskyblue;
-    background-image: url("assets/images/background-1.jpg");
+    background-image: url("../images/background-1.jpg");
     background-position: fixed;
     background-repeat: no-repeat;
 }
