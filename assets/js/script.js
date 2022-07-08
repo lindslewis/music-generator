@@ -25,6 +25,7 @@ var btnS = document.querySelector("#OpenS")
 };
 //LISTENER EVENT
 var searchTerm = 'jonas brothers'
+//searchInput.value
 //needs to exist within function 
 fetch(`https://theaudiodb.p.rapidapi.com/discography.php?s=${searchTerm}`, options)
     .then(function (response) {
