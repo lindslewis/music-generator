@@ -1,1 +1,27 @@
 /* base css file */
+
+/* body, and then h1 for the header for the title */
+/* main within the body, which contains the sections listed below */
+/* classes of each of our names, in their own sections: .Jovi .Lindsay .Stevie .Asiya*/
+/* each of these sections contains a button with an id each: #OpenA #OpenJ #OpenL #OpenS */
+/*  */
+
+/* play music from curated staff list from a spotify embedder */
+
+
+/* genre buttons will generate a modal for each playlist, which will include a "like" button for them to click and image of album cover, which if clicked, will populate another modal with info and discovery. then button at bottom for concert info.*/
+
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+/* for h1, gets the class "title is-1" */
+
+body {
+    background-color: lightskyblue;
+    background-image: url("assets/images/background-1.jpg");
+    background-position: fixed;
+    background-repeat: no-repeat;
+}
+
+/* main {
+    
+} */
+
