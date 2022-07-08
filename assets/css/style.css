@@ -11,17 +11,19 @@
 
 /* genre buttons will generate a modal for each playlist, which will include a "like" button for them to click and image of album cover, which if clicked, will populate another modal with info and discovery. then button at bottom for concert info.*/
 
-@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
 /* for h1, gets the class "title is-1" */
 
-body {
+#pageContent {
+    background-image: url("/assets/images/splash.jpg");
     background-color: lightskyblue;
-    background-image: url("assets/images/background-1.jpg");
-    background-position: fixed;
+    background-position: center;
+    background-attachment: fixed;
     background-repeat: no-repeat;
 }
 
 /* main {
     
 } */
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
 
