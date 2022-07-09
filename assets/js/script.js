@@ -92,5 +92,56 @@ fetch(`https://theaudiodb.p.rapidapi.com/discography.php?s=${searchTerm}`, optio
     let track_listA = {
         name: "Torn",
         artist: "Natalie Imbruglia",
-        image: "placeholder",
-    }
+        image,
+        path
+    },
+    {
+        name: "Torn",
+        artist: "Natalie Imbruglia",
+        image,
+        path,
+    },
+        name: "Torn",
+        artist: "Natalie Imbruglia",
+        image,
+        path
+    },
+    {
+        name: "Torn",
+        artist: "Natalie Imbruglia",
+        image,
+        path,
+    },
+        name: "Torn",
+        artist: "Natalie Imbruglia",
+        image,
+        path
+    },
+    {
+        name: "Torn",
+        artist: "Natalie Imbruglia",
+        image,
+        path,
+    },
+        name: "Torn",
+        artist: "Natalie Imbruglia",
+        image,
+        path
+    },
+    {
+        name: "Torn",
+        artist: "Natalie Imbruglia",
+        image,
+        path,
+    },
+        name: "Torn",
+        artist: "Natalie Imbruglia",
+        image,
+        path
+    },
+    {
+        name: "Torn",
+        artist: "Natalie Imbruglia",
+        image,
+        path,
+    },
