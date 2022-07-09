@@ -4,350 +4,371 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="assets\css\style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;1,100&display=swap" rel="stylesheet">
+    
+    
     <title>placeholder</title>
 </head>
 <body>
-    <h1>&#11088; Best Beats for Anyone's Mood &#11088;</h1>
-    hardcoded section of song
-<main>
-    
-<section class="Asiya">
-Define the section for displaying details
-    <div class ="playerA"></div>
-    <div class="now-playingA">Playing 1 of 10</div>
-    <div class="tracknameA">Track Name</div>
-    <div class="trackartistA">Track Artist</div>
+    <header>
+        <h1 id="titleHeader" class="title is-1">&#11088; Best Beats for Anyone's Mood &#11088;</h1>
+        <h2 class="subtitle is-3">placeholder 2</h2>
+    </header> -->
 
-Define the section for displaying track buttons
-<div class="buttons"></div>
-<div class="prev-track" onclick="prevTrack()">
-    <i class="fa fa-step-backward fa-2x"></i>
-  </div>
-  <div class="playpause-track" onclick="playpauseTrack()">
-    <i class="fa fa-play-circle fa-5x"></i>
-  </div>
-  <div class="next-track" onclick="nextTrack()">
-    <i class="fa fa-step-forward fa-2x"></i>
-  </div>
-</div>
+    <hero class="hero is-halfheight">
+        <header class="hero-body">
+            <h1 id="titleHeader" class="title is-1">&#11088; Best Beats for Anyone's Mood &#11088;</h1>
+            <h2 class="subtitle is-3">placeholder 2</h2>
+        </header>
+    </hero>
 
-Define the section for displaying the seek slider
-<div class="slider_container">
-    <div class="current-time">00:00</div>
-    <input type="range" min="1" max="100"
-      value="0" class="seek_slider" onchange="seekTo()">
-    <div class="total-duration">00:00</div>
-  </div>
+    <!-- hardcoded section of song -->
+    <main id="mainPage" class="container is-fluid columns is-multiline is-mobile">
+        <!-- Asiya's hardcoded songs -->
+        <!-- hardcoded section of song -->
+        
+        <section class="allFour asiya column is-one-half">
+        <!-- Define the section for displaying details -->
+            <article class ="playerA"></article>
+            <article class="now-playingA">Playing 1 of 10</article>
+            <article class="tracknameA">Track Name</article>
+            <article class="trackartistA">Track Artist</article>
 
-  Define the section for displaying the volume slider
-  <div class="slider_container">
-    <i class="fa fa-volume-down"></i>
-    <input type="range" min="1" max="100"
-      value="99" class="volume_slider" onchange="setVolume()">
-    <i class="fa fa-volume-up"></i>
-  </div>
-</div>
+        <!-- Define the section for displaying track buttons -->
+        <div class="buttons"></div>
+        <div class="prev-track" onclick="prevTrack()">
+            <i class="fa fa-step-backward fa-2x"></i>
+        </div>
+        <div class="playpause-track" onclick="playpauseTrack()">
+            <i class="fa fa-play-circle fa-5x"></i>
+        </div>
+        <div class="next-track" onclick="nextTrack()">
+            <i class="fa fa-step-forward fa-2x"></i>
+        </div>
+        </div>
 
-    Asiya's hardcoded songs
-    <button id="OpenA">&#128157;Heartbreakers & Heart-healers with Asiya&#128157;</button>
-        Natalie Imbruglia // torn
-    <audio>
-        <source src="/project audio files/Natalie Imbruglia - Torn.mp3" controls>
-    </audio>
-    The Band Perry // Done 
-    <audio>
-        <source src="/project audio files/Done - The Band Perry.mp3" controls>
-    </audio>
-     Carrie Underwood- Two Black Cadillacs
-    <audio>
-        <source src="/project audio files/Two Black Cadillacs.mp3" controls>
-    </audio>
-    The Beatles- Blackbird
-    <audio>
-        <source src="/project audio files/Blackbird (Remastered 2009).mp3" controls>
-    </audio>
-    Kiiara- Gold
-    <audio>
-        <source src="/project audio files/Kiiara - Gold.mp3" controls>
-    </audio>
-    Khalid- Location
-    <audio>
-        <source src="/project audio files/Khalid - Location.mp3" controls>
-    </audio>
-    Adele- Love in the Dark
-    <audio>
-        <source src="/project audio files/Adele - Love In The Dark.mp3" controls>
-    </audio>
-    Fall Out Boy- Centuries
-    <audio>
-        <source src="/project audio files/Centuries - Fall Out Boy.mp3" controls>
-    </audio>
-    Florida Georgia Line- Cruise
-    <audio>
-        <source src="/project audio files/Florida Georgia Line - Cruise.mp3" controls>
-    </audio>
-    Jonas Brothers- Year 3000
-    <audio>
-        <source src="/project audio files/Jonas Brothers- Year 3000.mp3" controls>
-    </audio>
+        <!-- Define the section for displaying the seek slider-->
+        <div class="slider_container">
+            <div class="current-time">00:00</div>
+            <input type="range" min="1" max="100"
+            value="0" class="seek_slider" onchange="seekTo()">
+            <div class="total-duration">00:00</div>
+        </div>
 
-</section>
+        <!-- Define the section for displaying the volume slider-->
+        <div class="slider_container">
+            <i class="fa fa-volume-down"></i>
+            <input type="range" min="1" max="100"
+            value="99" class="volume_slider" onchange="setVolume()">
+            <i class="fa fa-volume-up"></i>
+        </div>
+        </div>
 
-    Jovi's hardcoded songs
-<section class="Jovi">
-Define the section for displaying details
-<div class ="playerJ"></div>
-<div class="now-playingJ">Playing 1 of 10</div>
-<div class="tracknameJ">Track Name</div>
-<div class="trackartistJ">Track Artist</div>
+            <!-- Asiya's hardcoded songs -->
+            <button id="OpenA">&#128157;Heartbreakers & Heart-healers with Asiya&#128157;</button>
+                <!--Natalie Imbruglia // torn -->
+            <audio>
+                <source src="../project audio files/Natalie Imbruglia - Torn.mp3" controls>
+            </audio>
+            <!-- The Band Perry // Done  -->
+            <audio>
+                <source src="../project audio files/Done - The Band Perry.mp3" controls>
+            </audio>
+            <!-- Carrie Underwood- Two Black Cadillacs -->
+            <audio>
+                <source src="../project audio files/Two Black Cadillacs.mp3" controls>
+            </audio>
+            <!-- The Beatles- Blackbird -->
+            <audio>
+                <source src="../project audio files/Blackbird (Remastered 2009).mp3" controls>
+            </audio>
+            <!-- Kiiara- Gold -->
+            <audio>
+                <source src="../project audio files/Kiiara - Gold.mp3" controls>
+            </audio>
+            <!-- Khalid- Location -->
+            <audio>
+                <source src="../project audio files/Khalid - Location.mp3" controls>
+            </audio>
+            <!-- Adele- Love in the Dark -->
+            <audio>
+                <source src="../project audio files/Adele - Love In The Dark.mp3" controls>
+            </audio>
+            <!-- Fall Out Boy- Centuries -->
+            <audio>
+                <source src="../project audio files/Centuries - Fall Out Boy.mp3" controls>
+            </audio>
+            <!-- Florida Georgia Line- Cruise -->
+            <audio>
+                <source src="../project audio files/Florida Georgia Line - Cruise.mp3" controls>
+            </audio>
+            <!-- Jonas Brothers- Year 3000 -->
+            <audio>
+                <source src="../project audio files/Jonas Brothers- Year 3000.mp3" controls>
+            </audio>
 
-Define the section for displaying track buttons
-<div class="buttons"></div>
-<div class="prev-trackA" onclick="prevTrack()">
-<i class="fa fa-step-backward fa-2x"></i>
-</div>
-<div class="playpause-trackA" onclick="playpauseTrack()">
-<i class="fa fa-play-circle fa-5x"></i>
-</div>
-<div class="next-trackA" onclick="nextTrack()">
-<i class="fa fa-step-forward fa-2x"></i>
-</div>
-</div>
+        </section>
 
-Define the section for displaying the seek slider
-<div class="slider_container">
-<div class="current-timeA">00:00</div>
-<input type="range" min="1" max="100"
-  value="0" class="seek_sliderA" onchange="seekTo()">
-<div class="total-durationA">00:00</div>
-</div>
+            <!-- Jovi's hardcoded songs -->
+        <section class="allFour jovi column is-one-half">
+        <!-- Define the section for displaying details -->
+        <div class ="playerJ"></div>
+        <div class="now-playingJ">Playing 1 of 10</div>
+        <div class="tracknameJ">Track Name</div>
+        <div class="trackartistJ">Track Artist</div>
 
-Define the section for displaying the volume slider
-<div class="slider_container">
-<i class="fa fa-volume-down"></i>
-<input type="range" min="1" max="100"
-  value="99" class="volume_sliderA" onchange="setVolume()">
-<i class="fa fa-volume-up"></i>
-</div>
-</div>
+        <!-- Define the section for displaying track buttons -->
+        <div class="buttons"></div>
+        <div class="prev-trackA" onclick="prevTrack()">
+        <i class="fa fa-step-backward fa-2x"></i>
+        </div>
+        <div class="playpause-trackA" onclick="playpauseTrack()">
+        <i class="fa fa-play-circle fa-5x"></i>
+        </div>
+        <div class="next-trackA" onclick="nextTrack()">
+        <i class="fa fa-step-forward fa-2x"></i>
+        </div>
+        </div>
 
-    <button id="OpenJ">&#128293;Hitting High Tier Modes with Jovi!!&#128293;</button>
-    Hozier -- talk
-    <audio>
-        <source src="/project audio files/Hozier - Talk.mp3" controls>
-    </audio>
-/ Hozier -- Almost (sweet music) -->
-    <!-- <audio>
-        <source src="/project audio files/Hozier - Almost (Sweet Music).mp3" controls>
-    </audio>
-   Kaye -- howl
-   <audio>
-    <source src="/project audio files/Kaye - Howl.mp3" controls>
-</audio>
-    Pitbull -- Bon, bon
-    <audio>
-        <source src="/project audio files/Pitbull- Bon Bon.mp3" controls>
-    </audio>
-    Adam Lambert -- Superpower
-    <audio>
-        <source src="/project audio files/Adam Lambert - Superpower.mp3" controls>
-    </audio>
-    Mindless Self Indulgence -- For the Love of God
-    <audio>
-        <source src="/project audio files/Mindless Self Indulgence - For the Love of God .mp3" controls>
-    </audio>
-    2Pac, Roger, Dr. Dre -- California Love
-    <audio>
-        <source src="/project audio files/2Pac-- California Love (Original Version).mp3" controls>
-    </audio>
-    2Pac -- Ghetto Gospel
-    <audio>
-        <source src="/project audio files/2pac - Ghetto Gospel.mp3" controls>
-    </audio>
-    Elton John -- the bitch is back
-    <audio>
-        <source src="/project audio files/Elton John - The Bitch Is Back (Remastered).mp3" controls>
-    </audio>
-   -- My Chemical Romance -- vampire money
-   <audio>
-    <source src="/project audio files/My Chemical Romance - Vampire Money.mp3" controls>
-</audio> -->
+        <!-- Define the section for displaying the seek slider-->
+        <div class="slider_container">
+        <div class="current-timeA">00:00</div>
+        <input type="range" min="1" max="100"
+        value="0" class="seek_sliderA" onchange="seekTo()">
+        <div class="total-durationA">00:00</div>
+        </div>
+
+        <!-- Define the section for displaying the volume slider-->
+        <div class="slider_container">
+        <i class="fa fa-volume-down"></i>
+        <input type="range" min="1" max="100"
+        value="99" class="volume_sliderA" onchange="setVolume()">
+        <i class="fa fa-volume-up"></i>
+        </div>
+        </div>
+
+            <button id="OpenJ">&#128293;Hitting High Tier Modes with Jovi!!&#128293;</button>
+            <!-- Hozier -- talk -->
+            <audio>
+                <source src="../project audio files/Hozier - Talk.mp3" controls>
+            </audio>
+            <!-- Hozier -- Almost (sweet music) -->
+            <audio>
+                <source src="../project audio files/Hozier - Almost (Sweet Music).mp3" controls>
+            </audio>
+        <!-- Kaye -- howl -->
+        <audio>
+            <source src="../project audio files/Kaye - Howl.mp3" controls>
+        </audio>
+            <!-- Pitbull -- Bon, bon -->
+            <audio>
+                <source src="../project audio files/Pitbull- Bon Bon.mp3" controls>
+            </audio>
+            <!-- Adam Lambert -- Superpower -->
+            <audio>
+                <source src="../project audio files/Adam Lambert - Superpower.mp3" controls>
+            </audio>
+            <!-- Mindless Self Indulgence -- For the Love of God -->
+            <audio>
+                <source src="../project audio files/Mindless Self Indulgence - For the Love of God .mp3" controls>
+            </audio>
+            <!-- 2Pac, Roger, Dr. Dre -- California Love -->
+            <audio>
+                <source src="../project audio files/2Pac-- California Love (Original Version).mp3" controls>
+            </audio>
+            <!-- 2Pac -- Ghetto Gospel -->
+            <audio>
+                <source src="../project audio files/2pac - Ghetto Gospel.mp3" controls>
+            </audio>
+            <!-- Elton John -- the bitch is back -->
+            <audio>
+                <source src="../project audio files/Elton John - The Bitch Is Back (Remastered).mp3" controls>
+            </audio>
+        <!-- -- My Chemical Romance -- vampire money -->
+        <audio>
+            <source src="../project audio files/My Chemical Romance - Vampire Money.mp3" controls>
+        </audio>
 
 
-<!-- </section>
-Lindsay's hardcoded songs
-<section class="Lindsay">
-Define the section for displaying details
-<div class ="playerL"></div>
-<div class="now-playingL">Playing 1 of 10</div>
-<div class="tracknameL">Track Name</div>
-<div class="trackartistL">Track Artist</div>
+        </section>
+        <!-- Lindsay's hardcoded songs -->
+        <section class="allFour lindsay column is-one-half">
+        <!-- Define the section for displaying details -->
+        <div class ="playerL"></div>
+        <div class="now-playingL">Playing 1 of 10</div>
+        <div class="tracknameL">Track Name</div>
+        <div class="trackartistL">Track Artist</div>
 
-Define the section for displaying track buttons
-<div class="buttons"></div>
-<div class="prev-track" onclick="prevTrack()">
-<i class="fa fa-step-backward fa-2x"></i>
-</div>
-<div class="playpause-track" onclick="playpauseTrack()">
-<i class="fa fa-play-circle fa-5x"></i>
-</div>
-<div class="next-track" onclick="nextTrack()">
-<i class="fa fa-step-forward fa-2x"></i>
-</div>
-</div>
+        <!-- Define the section for displaying track buttons -->
+        <div class="buttons"></div>
+        <div class="prev-track" onclick="prevTrack()">
+        <i class="fa fa-step-backward fa-2x"></i>
+        </div>
+        <div class="playpause-track" onclick="playpauseTrack()">
+        <i class="fa fa-play-circle fa-5x"></i>
+        </div>
+        <div class="next-track" onclick="nextTrack()">
+        <i class="fa fa-step-forward fa-2x"></i>
+        </div>
+        </div>
 
-Define the section for displaying the seek slider
-<div class="slider_container">
-<div class="current-time">00:00</div>
-<input type="range" min="1" max="100"
-  value="0" class="seek_slider" onchange="seekTo()">
-<div class="total-duration">00:00</div>
-</div> -->
+        <!-- Define the section for displaying the seek slider-->
+        <div class="slider_container">
+        <div class="current-time">00:00</div>
+        <input type="range" min="1" max="100"
+        value="0" class="seek_slider" onchange="seekTo()">
+        <div class="total-duration">00:00</div>
+        </div>
 
-<!-- Define the section for displaying the volume slider-->
-<!-- <div class="slider_container">
-<i class="fa fa-volume-down"></i>
-<input type="range" min="1" max="100"
-  value="99" class="volume_slider" onchange="setVolume()">
-<i class="fa fa-volume-up"></i>
-</div>
-</div> -->
+        <!-- Define the section for displaying the volume slider-->
+        <div class="slider_container">
+        <i class="fa fa-volume-down"></i>
+        <input type="range" min="1" max="100"
+        value="99" class="volume_slider" onchange="setVolume()">
+        <i class="fa fa-volume-up"></i>
+        </div>
+        </div>
 
-    <!-- <button id="OpenL">&#129336;Ultimate Trap & Dance Vibes with Lindsay&#129336;</button>
+            <button id="OpenL">&#129336;Ultimate Trap & Dance Vibes with Lindsay&#129336;</button>
 
-    Pearl Jam-- Dance of the Clairvoyants
-    <audio>
-        <source src="/project audio files/Pearl Jam - Dance Of The Clairvoyants.mp3" controls>
-    </audio>
-    Yultron feat Kellin Quinn--The Bottom
-    <audio>
-        <source src="/project audio files/Yultron (feat. Kellin Quinn)- The Bottom .mp3" controls>
-    </audio>
-    Gorillaz-- The Valley of the Pagans
-    <audio>
-        <source src="/project audio files/Gorillaz ft. Beck - The Valley of The Pagans.mp3" controls>
-    </audio>
-     Novo Amor-- Opaline
-    <audio>
-        <source src="/project audio files/Novo Amor - Opaline.mp3" controls>
-    </audio>
-    Flor (Messyhair remix) -- Warm Blood
-    <audio>
-        <source src="/project audio files/Flor - warm blood (messyhair remix).mp3" controls>
-    </audio>
-    INZO-- Overthinker
-    <audio>
-        <source src="/project audio files/INZO - Overthinker.mp3" controls>
-    </audio>
-    Badflower -- Promise Me
-    <audio>
-        <source src="/project audio files/Badflower- Promise Me.mp3" controls>
-    </audio>
-    KRANE -- I'll Be Good
-    <audio>
-        <source src="/project audio files/KRNE - I'll Be Good.mp3" controls>
-    </audio>
-    Kendrik Lamar -- DNA
-    <audio>
-        <source src="/project audio files/DNA - Kendrick Lamar.mp3" controls>
-    </audio>
-    The Jezebels -- A Little Piece
-    <audio>
-        <source src="/project audio files/The Jezebels- A Little Piece.mp3" controls>
-    </audio>
-</section>
+            <!-- Pearl Jam-- Dance of the Clairvoyants -->
+            <audio>
+                <source src="../project audio files/Pearl Jam - Dance Of The Clairvoyants.mp3" controls>
+            </audio>
+            <!-- Yultron feat Kellin Quinn--The Bottom -->
+            <audio>
+                <source src="../project audio files/Yultron (feat. Kellin Quinn)- The Bottom .mp3" controls>
+            </audio>
+            <!-- Gorillaz-- The Valley of the Pagans -->
+            <audio>
+                <source src="../project audio files/Gorillaz ft. Beck - The Valley of The Pagans.mp3" controls>
+            </audio>
+            <!-- Novo Amor-- Opaline -->
+            <audio>
+                <source src="../project audio files/Novo Amor - Opaline.mp3" controls>
+            </audio>
+            <!-- Flor (Messyhair remix) -- Warm Blood -->
+            <audio>
+                <source src="../project audio files/Flor - warm blood (messyhair remix).mp3" controls>
+            </audio>
+            <!-- INZO-- Overthinker -->
+            <audio>
+                <source src="../project audio files/INZO - Overthinker.mp3" controls>
+            </audio>
+            <!-- Badflower -- Promise Me -->
+            <audio>
+                <source src="../project audio files/Badflower- Promise Me.mp3" controls>
+            </audio>
+            <!-- KRANE -- I'll Be Good -->
+            <audio>
+                <source src="../project audio files/KRNE - I'll Be Good.mp3" controls>
+            </audio>
+            <!-- Kendrik Lamar -- DNA -->
+            <audio>
+                <source src="../project audio files/DNA - Kendrick Lamar.mp3" controls>
+            </audio>
+            <!-- The Jezebels -- A Little Piece -->
+            <audio>
+                <source src="../project audio files/The Jezebels- A Little Piece.mp3" controls>
+            </audio>
+        </section>
 
-Stevie's hardcoded songs
-<section class="Stevie">
-    Define the section for displaying details
-    <div class ="playerS"></div>
-    <div class="now-playingS">Playing 1 of 10</div>
-    <div class="tracknameS">Track Name</div>
-    <div class="trackartistS">Track Artist</div>
+    <!-- Stevie's hardcoded songs -->
+        <section class="allFour stevie column is-one-half">
+            <!-- Define the section for displaying details -->
+            <div class ="playerS"></div>
+            <div class="now-playingS">Playing 1 of 10</div>
+            <div class="tracknameS">Track Name</div>
+            <div class="trackartistS">Track Artist</div>
 
-Define the section for displaying track buttons
-<div class="buttons"></div>
-<div class="prev-track" onclick="prevTrack()">
-    <i class="fa fa-step-backward fa-2x"></i>
-  </div>
-  <div class="playpause-track" onclick="playpauseTrack()">
-    <i class="fa fa-play-circle fa-5x"></i>
-  </div>
-  <div class="next-track" onclick="nextTrack()">
-    <i class="fa fa-step-forward fa-2x"></i>
-  </div>
-</div>
+        <!-- Define the section for displaying track buttons -->
+        <div class="buttons"></div>
+        <div class="prev-track" onclick="prevTrack()">
+            <i class="fa fa-step-backward fa-2x"></i>
+        </div>
+        <div class="playpause-track" onclick="playpauseTrack()">
+            <i class="fa fa-play-circle fa-5x"></i>
+        </div>
+        <div class="next-track" onclick="nextTrack()">
+            <i class="fa fa-step-forward fa-2x"></i>
+        </div>
+        </div>
 
-Define the section for displaying the seek slider
-<div class="slider_container">
-    <div class="current-time">00:00</div>
-    <input type="range" min="1" max="100"
-      value="0" class="seek_slider" onchange="seekTo()">
-    <div class="total-duration">00:00</div>
-  </div>
+        <!-- Define the section for displaying the seek slider-->
+        <div class="slider_container">
+            <div class="current-time">00:00</div>
+            <input type="range" min="1" max="100"
+            value="0" class="seek_slider" onchange="seekTo()">
+            <div class="total-duration">00:00</div>
+        </div>
 
-  Define the section for displaying the volume slider
-  <div class="slider_container">
-    <i class="fa fa-volume-down"></i>
-    <input type="range" min="1" max="100"
-      value="99" class="volume_slider" onchange="setVolume()">
-    <i class="fa fa-volume-up"></i>
-  </div>
-</div>
-    <button id= "OpenS">&#129419;Absolutely Chilling with Stevie&#129419;</button>
-  / Sharon Van Etten- Seventeen (or Every Time the Sun Comes Up) -->
-    <!-- <audio>
-        <source src="/project audio files/Sharon Van Etten - Every Time The Sun Comes Up.mp3" controls>
-    </audio>
-    Kyle Craft- Heartbreak Junky
-    <audio>
-        <source src="/project audio files/Kyle Craft - Heartbreak Junky.mp3" controls>
-    </audio>
-    Chastity Belt- Black Sail
-    <audio>
-        <source src="/project audio files/Chastity Belt - Black Sail.mp3" controls>
-    </audio>
-   / Marlon Williams-  Dark Child -->
-    <!-- <audio>
-        <source src="/project audio files/Marlon Williams - Dark Child.mp3" controls>
-    </audio> -->
-    <!-- Black Rebel Motorcycle Club- Sweet Feeling -->
-    <!-- <audio>
-        <source src="/project audio files/Black Rebel Motorcycle Club - Sweet Feeling.mp3" controls>
-    </audio> -->
-    <!-- Ezra Furman- Every Feeling -->
-    <!-- <audio>
-        <source src="/project audio files/Ezra Furman - Every Feeling.mp3" controls>
-    </audio> -->
-    <!-- Yann Tiersen Porz Goret -->
-    <!-- <audio>
-        <source src="/project audio files/Yann Tiersen - Porz Goret.mp3" controls>
-    </audio> -->
-    <!-- Mura Masa- give me The ground -->
-    <!-- <audio>
-        <source src="/project audio files/Mura Masa - Give Me the Ground.mp3" controls>
-    </audio> -->
-    <!-- Aldous Harding - Imagining My Man -->
-    <!-- <audio>
-        <source src="/project audio files/Aldous Harding - Imagining My Man.mp3" controls>
-    </audio> -->
-    <!-- Angel Olsen- Heart Shaped Face -->
-    <!-- <audio>
-        <source src="/project audio files/Angel Olsen - Heart Shaped Face.mp3" controls>
-    </audio> -->
+        <!-- Define the section for displaying the volume slider-->
+        <div class="slider_container">
+            <i class="fa fa-volume-down"></i>
+            <input type="range" min="1" max="100"
+            value="99" class="volume_slider" onchange="setVolume()">
+            <i class="fa fa-volume-up"></i>
+        </div>
+        </div>
+            <button id= "OpenS">&#129419;Absolutely Chilling with Stevie&#129419;</button>
+            <!-- Sharon Van Etten- Seventeen (or Every Time the Sun Comes Up) -->
+            <audio>
+                <source src="../project audio files/Sharon Van Etten - Every Time The Sun Comes Up.mp3" controls>
+            </audio>
+            <!-- Kyle Craft- Heartbreak Junky -->
+            <audio>
+                <source src="../project audio files/Kyle Craft - Heartbreak Junky.mp3" controls>
+            </audio>
+            <!-- Chastity Belt- Black Sail -->
+            <audio>
+                <source src="../project audio files/Chastity Belt - Black Sail.mp3" controls>
+            </audio>
+            <!-- Marlon Williams-  Dark Child -->
+            <audio>
+                <source src="../project audio files/Marlon Williams - Dark Child.mp3" controls>
+            </audio>
+            <!-- Black Rebel Motorcycle Club- Sweet Feeling -->
+            <audio>
+                <source src="../project audio files/Black Rebel Motorcycle Club - Sweet Feeling.mp3" controls>
+            </audio>
+            <!-- Ezra Furman- Every Feeling -->
+            <audio>
+                <source src="../project audio files/Ezra Furman - Every Feeling.mp3" controls>
+            </audio>
+            <!-- Yann Tiersen Porz Goret -->
+            <audio>
+                <source src="../project audio files/Yann Tiersen - Porz Goret.mp3" controls>
+            </audio>
+            <!-- Mura Masa- give me The ground -->
+            <audio>
+                <source src="../project audio files/Mura Masa - Give Me the Ground.mp3" controls>
+            </audio>
+            <!-- Aldous Harding - Imagining My Man -->
+            <audio>
+                <source src="../project audio files/Aldous Harding - Imagining My Man.mp3" controls>
+            </audio>
+            <!-- Angel Olsen- Heart Shaped Face -->
+            <audio>
+                <source src="../project audio files/Angel Olsen - Heart Shaped Face.mp3" controls>
+            </audio>
 
-<!-- </section>
-</main>
+        </section>
 
-<section>
-    <aside>
-        <button id ="concert"> hit up some concerts!!!</button>
-        <button id= "disco">more songs by any artist!!</button>
-    </aside>
-</section>
+
+        <section class="bottomBar column is-full">
+            <aside>
+                <button id ="concert"> hit up some concerts!!!</button>
+                <button id= "disco">more songs by any artist!!</button>
+            </aside>
+        </section>
+    </main>
+    <footer class="footer">
+        <h3>Made with &#128420</h3>
+    </footer>
 
 <script src="./assets/js/script.js"></script>
 </body>

@@ -2,7 +2,15 @@ var btnA = document.querySelector("#OpenA")
 var btnJ = document.querySelector("#OpenJ")
 var btnL = document.querySelector("#OpenL")
 var btnS = document.querySelector("#OpenS")
-
+var discoBtn =document.querySelector("#disco")
+//var discoInput = document.querySelector("#disco-search")
+const options = {
+    method: 'GET',
+    headers: {
+        'X-RapidAPI-Key': '60e1f1e588mshbfdd753b6261471p19ccc5jsna4b5c34f4030',
+        'X-RapidAPI-Host': 'theaudiodb.p.rapidapi.com'
+    }
+};
 //Listener events for genre selection/button selection:
 
 //listener event needs to include modal pop up
@@ -15,16 +23,10 @@ var btnS = document.querySelector("#OpenS")
     //generate liked artist onto browser (?get.Item which will also store in browser for later)
     //triggers another modal w/ band discography(API?)
 
-
-    const options = {
-    method: 'GET',
-    headers: {
-        'X-RapidAPI-Key': '60e1f1e588mshbfdd753b6261471p19ccc5jsna4b5c34f4030',
-        'X-RapidAPI-Host': 'theaudiodb.p.rapidapi.com'
-    }
-};
-//LISTENER EVENT
-var searchTerm = 'jonas brothers'
+  
+discoBtn.addEventListener("click", apiSearch)
+function apiSearch(){
+var searchTerm = 'jonas brothers'//this would var searchTerm = discoInput.value
 //searchInput.value
 //needs to exist within function 
 fetch(`https://theaudiodb.p.rapidapi.com/discography.php?s=${searchTerm}`, options)
@@ -40,13 +42,13 @@ fetch(`https://theaudiodb.p.rapidapi.com/discography.php?s=${searchTerm}`, optio
             //append that newly created element to the div
             console.log(data.album[i].strAlbum)
         }
-
     })
     .catch(function (er) {
         console.log(er)
     });
+}
 
-    //console.log(data[i].album)
+//function printData()
         
 
 //Type input into search/input window for upcoming concerts
