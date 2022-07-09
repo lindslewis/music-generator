@@ -3,6 +3,7 @@ var btnJ = document.querySelector("#OpenJ")
 var btnL = document.querySelector("#OpenL")
 var btnS = document.querySelector("#OpenS")
 var discoBtn =document.querySelector("#disco")
+//var discoInput = document.querySelector("#disco-search")
 const options = {
     method: 'GET',
     headers: {
@@ -25,7 +26,7 @@ const options = {
   
 discoBtn.addEventListener("click", apiSearch)
 function apiSearch(){
-var searchTerm = 'jonas brothers'//this should be text box value
+var searchTerm = 'jonas brothers'//this would var searchTerm = discoInput.value
 //searchInput.value
 //needs to exist within function 
 fetch(`https://theaudiodb.p.rapidapi.com/discography.php?s=${searchTerm}`, options)
@@ -46,7 +47,8 @@ fetch(`https://theaudiodb.p.rapidapi.com/discography.php?s=${searchTerm}`, optio
         console.log(er)
     });
 }
-    //console.log(data[i].album)
+
+//function printData()
         
 
 //Type input into search/input window for upcoming concerts
