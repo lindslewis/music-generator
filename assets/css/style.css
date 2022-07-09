@@ -25,6 +25,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 .hero {
+    position: relative;
     background-image: url("../images/splash.jpg");
     background-size: cover;
     height: auto;
@@ -42,6 +43,7 @@ hero header {
 }
 
 body {
+    position: relative;
     background-image: url("../images/background-2.jpg");
     background-color: var(--background);
     background-attachment: fixed;
@@ -49,11 +51,22 @@ body {
     background-size: cover;
     height: 100%;
 }
+/* below is to make the background image more transparent without affecting the text, by giving it a white overlay */
+body::before{
+    content: "";
+    position:absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
 
 #mainPage {
+    position: relative;
     padding: 2%;
     margin: 2%;
-    height: 90vh;
+    height: 100%;
 }
 
 .allFour {
@@ -68,6 +81,7 @@ body {
 }
 
 .bottomBar {
+    position: relative;
     align-self: center;
     border: 5px solid var(--light);
     border-radius: 10px;
@@ -78,6 +92,7 @@ body {
 }
 
 footer {
+    position: relative;
     max-height: 10%;
     text-align: center;
     font-weight: bold;
