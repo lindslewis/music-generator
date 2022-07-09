@@ -40,8 +40,8 @@ body {
 }
 
 #mainPage {
-    border-width: 2px;
-    border-color: black;
+    padding: 5%;
+    margin: 2%;
 }
 /* main {
     
