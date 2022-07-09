@@ -11,17 +11,93 @@
 
 /* genre buttons will generate a modal for each playlist, which will include a "like" button for them to click and image of album cover, which if clicked, will populate another modal with info and discovery. then button at bottom for concert info.*/
 
-@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
-/* for h1, gets the class "title is-1" */
 
-body {
-    background-color: lightskyblue;
-    background-image: url("../images/background-1.jpg");
-    background-position: fixed;
-    background-repeat: no-repeat;
+/* for h1, gets the class "title is-1" */
+:root {
+    --background: #aac6b3;
+    --primary: #6a3937;
+    --accent: #023660;
+    --dark: #3b0d11;
+    --light: #f8A29D;
 }
 
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+.hero {
+    position: relative;
+    background-image: url("../images/splash.jpg");
+    background-size: cover;
+    height: auto;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+}
+hero header {
+    margin: 0 2px 2px 2px;
+    padding: 1% 0 1% 5%;
+    /* background-image: linear-gradient(to right, var(--background), var(--light), var(--primary), var(--dark)); */
+}
+
+#titleHeader {
+    text-align: left;
+}
+
+body {
+    position: relative;
+    background-image: url("../images/background-2.jpg");
+    background-color: var(--background);
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-size: cover;
+    height: 100%;
+}
+/* below is to make the background image more transparent without affecting the text, by giving it a white overlay */
+body::before{
+    content: "";
+    position:absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#mainPage {
+    position: relative;
+    padding: 2%;
+    margin: 2%;
+    height: 100%;
+}
+
+.allFour {
+    align-self: center;
+    border: 5px solid var(--light);
+    border-radius: 10px;
+    padding: 1%;
+    margin: 1%;
+    background-color: var(--light);
+    /* background-image: linear-gradient(var(--light), var(--light) 75%, white 75%, white); */
+    box-shadow: 5px 5px 3px var(--dark);
+}
+
+.bottomBar {
+    position: relative;
+    align-self: center;
+    border: 5px solid var(--light);
+    border-radius: 10px;
+    padding: 1%;
+    margin: 1%;
+    background-color: var(--light);
+    box-shadow: 5px 5px 3px var(--dark);
+}
+
+footer {
+    position: relative;
+    max-height: 10%;
+    text-align: center;
+    font-weight: bold;
+
+}
 /* main {
     
 } */
-
