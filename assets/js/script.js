@@ -23,36 +23,38 @@ const options = {
 //liking song will store info to local storage (set.Item)
 //generate liked artist onto browser (?get.Item which will also store in browser for later)
 
-//js for discography search by artist  
+//js for discography search by artist
+//Type input into search/input window for upcoming concerts
+//"enter or search" button to populate list (Listener event)
+//needs to fetch API data  
 discoBtn.addEventListener("click", apiSearch)
 function apiSearch() {
     var searchTerm = discoInput.value
     //needs to exist within function 
     fetch(`https://theaudiodb.p.rapidapi.com/discography.php?s=${searchTerm}`, options)
         .then(function (response) {
+            if (!searchTerm.ok || searchTerm < 1) {
+            console.log ("invalid entry or information not available")
+
             return response.json()
             //console.log(response.status)(to check for error codes)
+        }
         })
         .then(function (data) {
             console.log(data)
-            for (let i = 0; i < data.album.length; i++) {
+           for (let i = 0; i < data.album.length; i++) {
                 //for each item create an element (like h2)
                 //then set the text content for the newly created element for the current item in the array
                 //append that newly created element to the div
                 console.log(data.album[i].strAlbum)
-            }
+           }
         })
-        .catch(function (er) {
-            console.log(er)
+       .catch(function (er) {
+          console.log(er)
         });
-}
-
+    }
 //function printData()
 
-
-//Type input into search/input window for upcoming concerts
-//"enter or search" button to populate list (Listener event)
-//needs to fetch API data
 //data needs to render to page  (another modal)
 //need a way to close out of list of concerts
 
