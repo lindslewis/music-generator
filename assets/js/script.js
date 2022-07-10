@@ -9,7 +9,7 @@ var discoBtn = document.querySelector("#disco")
 var discoInput = document.querySelector("#disco-search")
 var issueContainer = document.querySelector("#issues")
 //key for discography search
-
+// create function to open a new page
 const option = {
 	method: 'GET',
 	headers: {
