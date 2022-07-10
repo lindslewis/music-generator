@@ -72,14 +72,15 @@ body::before{
 .allFour {
     display: flex;
     align-self: center;
-    border: 5px solid var(--light);
-    border-radius: 10px;
-    padding: 1%;
+    border-radius: 5vh!important;
     margin: 1%;
-    background-color: var(--light);
+    /* the important addition overrides bulma's code */
+    background-image: linear-gradient(white, var(--light) 20%, var(--light), var(--light) 80%, white)!important;
     /* background-image: linear-gradient(var(--light), var(--light) 75%, white 75%, white); */
-    box-shadow: 5px 5px 3px var(--dark);
+    box-shadow: 2vh 2vh 1vh var(--dark)!important;
 }
+
+
 
 .card-header {
     display: flex;
@@ -91,9 +92,29 @@ body::before{
     font-weight: bold;
     padding: 3px;
 }
-.tracknameA {
-
+.heartContainer {
+    outline: none;
+    width: fit-content;
+    height: fit-content;
+    padding: 0;
+    background: none;
+    border: 0;
+    margin-top: 1vh;
 }
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.fa-heart {
+    padding: 0;
+    margin: 0;
+    color: var(--dark);
+}
+
+/* need/want to add hover effects with the cursor, but it's not registering. will come back to it. */
 
 .bottomBar {
     position: relative;

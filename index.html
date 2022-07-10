@@ -40,10 +40,47 @@
                 <p class="tracknameA">Track Name</p>
                 <p class="trackartistA">Track Artist</p>
             </article>
-            <article class ="playerA card-content"></article>
+            <!-- the stuff in the content (for the slider, player, etc) were originally below, simply cut and paste them here, the divs were changed to sections and articles. -->
+            <section class ="playerA card-content">
+                <section class="buttons"></section>
+                    <article class="prev-track" onclick="prevTrack()">
+                        <i class="fa fa-step-backward fa-2x"></i>
+                    </article>
+                    <article class="playpause-track" onclick="playpauseTrack()">
+                        <i class="fa fa-play-circle fa-5x"></i>
+                    </article>
+                    <article class="next-track" onclick="nextTrack()">
+                        <i class="fa fa-step-forward fa-2x"></i>
+                    </article>
+                </section>
+        
+                <!-- Define the section for displaying the seek slider-->
+                <div class="slider_container">
+                    <div class="current-time">00:00</div>
+                    <input type="range" min="1" max="100"
+                    value="0" class="seek_slider" onchange="seekTo()">
+                    <div class="total-duration">00:00</div>
+                </div>
+        
+                <!-- Define the section for displaying the volume slider-->
+                <div class="slider_container">
+                    <i class="fa fa-volume-down"></i>
+                    <input type="range" min="1" max="100"
+                    value="99" class="volume_slider" onchange="setVolume()">
+                    <i class="fa fa-volume-up"></i>
+                </div>
+                </div>
+            </section>
             <article class="card-footer">
                 <!-- below is added to be the "like" button. linked to nowhere for now -->
-                <button class="heart card-footer-item"></button>
+                <button class="heartContainer">
+                    <i class="heart fa-regular fa-heart fa-2x"></i>
+                </button>
+                <!-- <button class="heartContainer button is-hovered is-responsive card-footer-item">
+                    <span class="heart icon is-large">
+                        <i class="fa-regular fa-heart fa-2x"></i> -->
+                    </span>
+                </button>
             </article>
 
             <!-- <article class="now-playingA ">Playing 1 of 10</article>
@@ -51,37 +88,10 @@
             <article class="trackartistA">Track Artist</article> -->
 
         <!-- Define the section for displaying track buttons -->
-        <div class="buttons"></div>
-        <div class="prev-track" onclick="prevTrack()">
-            <i class="fa fa-step-backward fa-2x"></i>
-        </div>
-        <div class="playpause-track" onclick="playpauseTrack()">
-            <i class="fa fa-play-circle fa-5x"></i>
-        </div>
-        <div class="next-track" onclick="nextTrack()">
-            <i class="fa fa-step-forward fa-2x"></i>
-        </div>
-        </div>
 
-        <!-- Define the section for displaying the seek slider-->
-        <div class="slider_container">
-            <div class="current-time">00:00</div>
-            <input type="range" min="1" max="100"
-            value="0" class="seek_slider" onchange="seekTo()">
-            <div class="total-duration">00:00</div>
-        </div>
-
-        <!-- Define the section for displaying the volume slider-->
-        <div class="slider_container">
-            <i class="fa fa-volume-down"></i>
-            <input type="range" min="1" max="100"
-            value="99" class="volume_slider" onchange="setVolume()">
-            <i class="fa fa-volume-up"></i>
-        </div>
-        </div>
 
             <!-- Asiya's hardcoded songs -->
-            <button id="OpenA">&#128157;Heartbreakers & Heart-healers with Asiya&#128157;</button>
+ <!-- got rid of the button here since it will be presenting differently than originally planned -->
                 <!--Natalie Imbruglia // torn -->
             <audio>
                 <source src="../project audio files/Natalie Imbruglia - Torn.mp3" controls>
@@ -383,6 +393,7 @@
         <h3>Made with &#128420</h3>
     </footer>
 
+    <script src="https://kit.fontawesome.com/997d2a4a51.js" crossorigin="anonymous"></script>
     <script src="./assets/js/script.js"></script>
     </body>
 </html>
