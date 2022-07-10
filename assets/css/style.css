@@ -68,25 +68,66 @@ body::before{
     margin: 2%;
     height: 100%;
 }
-
+/* below is the styling for the cards!!!!!! */
 .allFour {
+    display: flex;
     align-self: center;
-    border: 5px solid var(--light);
-    border-radius: 10px;
-    padding: 1%;
+    border-radius: 5vh!important;
     margin: 1%;
-    background-color: var(--light);
+    /* the important addition overrides bulma's code */
+    background-image: linear-gradient(white, var(--light) 20%, var(--light), var(--light) 80%, white)!important;
     /* background-image: linear-gradient(var(--light), var(--light) 75%, white 75%, white); */
-    box-shadow: 5px 5px 3px var(--dark);
+    box-shadow: 2vh 2vh 1vh var(--dark)!important;
 }
 
+.card-header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: none!important;
+    box-shadow: none!important;
+}
+.card-header-title {
+    font-size: large;
+    font-weight: bold;
+    padding: 3px;
+}
+
+.card-footer {
+    padding: 2vh;
+    border: none!important;
+    margin-top: 2vh;
+}
+.heartContainer {
+    outline: none;
+    width: fit-content;
+    height: fit-content;
+    padding: 0;
+    background: none;
+    border: 0;
+}
+
+.fa-heart {
+    padding: 0;
+    margin: 0;
+    color: var(--dark);
+}
+
+.trackNum {
+    text-align: end!important;
+
+}
+
+/* need/want to add hover effects with the cursor, but it's not registering. will come back to it. */
+
 .bottomBar {
+    max-width: 100vw;
     position: relative;
-    align-self: center;
+    text-align: center;
     border: 5px solid var(--light);
     border-radius: 10px;
     padding: 1%;
-    margin: 1%;
+    margin: 5%;
     background-color: var(--light);
     box-shadow: 5px 5px 3px var(--dark);
 }
@@ -98,6 +139,3 @@ footer {
     font-weight: bold;
 
 }
-/* main {
-    
-} */
