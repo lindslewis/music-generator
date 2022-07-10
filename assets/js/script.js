@@ -59,6 +59,10 @@ function apiSearch() {
                 console.log(data.album[i].strAlbum)
                 //append that newly created element to the div
                 issueContainer.append(albumTitle);
+                //window.setTimeout(() => {
+                  //  issueContainer.append("")
+                //}, 5000);
+               // }
            }
         })
        .catch(function (er) {
