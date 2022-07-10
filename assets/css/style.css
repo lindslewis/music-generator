@@ -132,6 +132,14 @@ body::before{
     box-shadow: 5px 5px 3px var(--dark);
 }
 
+.fa-music::after {
+    color: var(--dark);
+}
+
+.fa-compact-disc::after {
+    color: var(--dark);
+}
+
 footer {
     position: relative;
     max-height: 10%;

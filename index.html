@@ -432,12 +432,29 @@
 
         <section class="bottomBar column is-three-quarters">
             <article>
-                <aside>
-                    <input type="text" id="concert-search" placeholder="Enter Artist Here"></input>
+                <section>
+
+                    <!-- below is for searching for concerts/events based on an artist -->
+                    <!-- added classes to style, symbol to search input bar -->
+                    <aside class="control has-icons-left">
+                        <input class="input is-medium is-rounded is-hovered" id="concert-search" type="text" placeholder="Enter Artist Here">
+                        <span class="icon is-left">
+                          <i class="fas fa-solid fa-music"></i>
+                        </span>
+                    </aside>
+
                     <button id ="concert"> Hit up some concerts!!!</button>
-                    <input type="text" id="disco-search" placeholder="Enter Artist Here"></input>
+                    <!-- below is for searching for more albums from an artist -->
+                    <!-- adding symbol to the search input bar, plus classes for styling -->
+                    <aside class="control has-icons-left">
+                        <input class="input is-medium is-rounded is-hovered" id="disco-search" type="text" placeholder="Enter Artist Here">
+                        <span class="icon is-left">
+                          <i class="fas fa-solid fa-compact-disc"></i>
+                        </span>
+                    </aside>
+
                     <button id= "disco">Search Entire Catalogue!!</button>
-                </aside>
+                </section>
             </article>
            <section class="container" id="issues"></section>
         </section>
