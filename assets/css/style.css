@@ -70,6 +70,7 @@ body::before{
 }
 
 .allFour {
+    display: flex;
     align-self: center;
     border: 5px solid var(--light);
     border-radius: 10px;
@@ -78,6 +79,20 @@ body::before{
     background-color: var(--light);
     /* background-image: linear-gradient(var(--light), var(--light) 75%, white 75%, white); */
     box-shadow: 5px 5px 3px var(--dark);
+}
+
+.card-header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.card-header-title {
+    font-size: large;
+    font-weight: bold;
+    padding: 3px;
+}
+.tracknameA {
+
 }
 
 .bottomBar {

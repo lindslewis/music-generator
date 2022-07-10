@@ -20,7 +20,7 @@
         <h2 class="subtitle is-3">placeholder 2</h2>
     </header> -->
 
-    <hero class="hero is-halfheight">
+    <hero class="hero is-quarterheight">
         <header class="hero-body">
             <h1 id="titleHeader" class="title is-1">&#11088; Best Beats for Anyone's Mood &#11088;</h1>
             <h2 class="subtitle is-3">placeholder 2</h2>
@@ -32,12 +32,23 @@
         <!-- Asiya's hardcoded songs -->
         <!-- hardcoded section of song -->
         
-        <section class="allFour asiya column is-one-half">
-        <!-- Define the section for displaying details -->
-            <article class ="playerA"></article>
-            <article class="now-playingA">Playing 1 of 10</article>
+        <!-- changed this from a normal container to a card -->
+        <section class="allFour asiya card column is-one-half">
+        <!-- I made a header to contain the titles of the genres/playlist and the track name and artist.  -->
+            <article class="card-header">
+                <h1 class="card-header-title">Heartbreakers and Healers with Asiya</h1>
+                <p class="tracknameA">Track Name</p>
+                <p class="trackartistA">Track Artist</p>
+            </article>
+            <article class ="playerA card-content"></article>
+            <article class="card-footer">
+                <!-- below is added to be the "like" button. linked to nowhere for now -->
+                <button class="heart card-footer-item"></button>
+            </article>
+
+            <!-- <article class="now-playingA ">Playing 1 of 10</article>
             <article class="tracknameA">Track Name</article>
-            <article class="trackartistA">Track Artist</article>
+            <article class="trackartistA">Track Artist</article> -->
 
         <!-- Define the section for displaying track buttons -->
         <div class="buttons"></div>
