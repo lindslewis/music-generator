@@ -54,34 +54,35 @@
                     </article>
                 </section>
         
-                <!-- Define the section for displaying the seek slider-->
-                <div class="slider_container">
-                    <div class="current-time">00:00</div>
+                <!-- seek slider, changed divs to section and p-->
+                <section class="slider_container">
+                    <p class="current-time">00:00</p>
                     <input type="range" min="1" max="100"
                     value="0" class="seek_slider" onchange="seekTo()">
-                    <div class="total-duration">00:00</div>
-                </div>
+                    <p class="total-duration">00:00</p>
+                </section>
         
-                <!-- Define the section for displaying the volume slider-->
-                <div class="slider_container">
+                <!-- volume slider, changed divs to section-->
+                <section class="slider_container">
                     <i class="fa fa-volume-down"></i>
                     <input type="range" min="1" max="100"
                     value="99" class="volume_slider" onchange="setVolume()">
                     <i class="fa fa-volume-up"></i>
-                </div>
-                </div>
+                </section>
+
+                <footer class="card-footer columns is-vcentered">
+                    <!-- below is added to be the "like" button. linked to nowhere for now -->
+                    <button class="heartContainer column is-one-quarter">
+                        <i class="heart fa-regular fa-heart fa-2x"></i>
+                    </button>
+                    <p class="trackNum now-playingA column">Playing 1 of 10</p>
+                    <!-- <button class="heartContainer button is-hovered is-responsive card-footer-item">
+                        <span class="heart icon is-large">
+                            <i class="fa-regular fa-heart fa-2x"></i> -->
+                </footer>
             </section>
-            <article class="card-footer">
-                <!-- below is added to be the "like" button. linked to nowhere for now -->
-                <button class="heartContainer">
-                    <i class="heart fa-regular fa-heart fa-2x"></i>
-                </button>
-                <!-- <button class="heartContainer button is-hovered is-responsive card-footer-item">
-                    <span class="heart icon is-large">
-                        <i class="fa-regular fa-heart fa-2x"></i> -->
-                    </span>
-                </button>
-            </article>
+         
+        </section>
 
             <!-- <article class="now-playingA ">Playing 1 of 10</article>
             <article class="tracknameA">Track Name</article>
@@ -91,8 +92,9 @@
 
 
             <!-- Asiya's hardcoded songs -->
- <!-- got rid of the button here since it will be presenting differently than originally planned -->
-                <!--Natalie Imbruglia // torn -->
+ <!-- got rid of the button here since it will be presenting differently than originally planned, sections currently to be able to minimize all the files lol -->
+        <section>
+            <!--Natalie Imbruglia // torn -->
             <audio>
                 <source src="../project audio files/Natalie Imbruglia - Torn.mp3" controls>
             </audio>

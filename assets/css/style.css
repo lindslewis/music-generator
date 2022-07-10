@@ -68,7 +68,7 @@ body::before{
     margin: 2%;
     height: 100%;
 }
-
+/* below is the styling for the cards!!!!!! */
 .allFour {
     display: flex;
     align-self: center;
@@ -80,17 +80,22 @@ body::before{
     box-shadow: 2vh 2vh 1vh var(--dark)!important;
 }
 
-
-
 .card-header {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    border: none!important;
+    box-shadow: none!important;
 }
 .card-header-title {
     font-size: large;
     font-weight: bold;
     padding: 3px;
+}
+
+.card-footer {
+    padding: 2vh;
+    border: none!important;
 }
 .heartContainer {
     outline: none;
@@ -100,11 +105,6 @@ body::before{
     background: none;
     border: 0;
     margin-top: 1vh;
-}
-
-.buttons {
-    display: flex;
-    flex-direction: row;
     text-align: center;
 }
 
@@ -112,6 +112,11 @@ body::before{
     padding: 0;
     margin: 0;
     color: var(--dark);
+}
+
+.trackNum {
+    text-align: end!important;
+
 }
 
 /* need/want to add hover effects with the cursor, but it's not registering. will come back to it. */
