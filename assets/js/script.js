@@ -48,8 +48,7 @@ function apiSearch() {
             console.log(data)
             //printData(data)
            for (let i = 0; i < data.album.length; i++) {
-            //1. create element
-            //for each item create an element (like h2)
+            //1. create element-for each item create an element (like h2)
             //var albumTitle = document.createElement ("a");
             var albumTitle = document.createElement ("h2")
             var releaseYear = document.createElement ("h3")
