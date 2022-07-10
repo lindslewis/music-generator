@@ -50,15 +50,20 @@ function apiSearch() {
            for (let i = 0; i < data.album.length; i++) {
             //1. create element
             //for each item create an element (like h2)
-            var albumTitle = document.createElement ("h2");
+            //var albumTitle = document.createElement ("a");
+            var albumTitle = document.createElement ("h2")
+            var releaseYear = document.createElement ("h3")
             //2. style/content
             albumTitle.textContent = data.album[i].strAlbum;
+            releaseYear.textContent = data.album[i].releaseYear;
             //albumTitle.setAttribute("href",data.album[i].strAlbum)
             //albumTitle.setAttribute("target","_blank")
                 //then set the text content for the newly created element for the current item in the array
                 console.log(data.album[i].strAlbum)
+                console.log(data.album[i].intYearReleased)
                 //append that newly created element to the div
-                issueContainer.append(albumTitle);
+                issueContainer.append(albumTitle)
+                issueContainer.append(releaseYear)
            }
         })
        .catch(function (er) {
@@ -109,3 +114,5 @@ let track_listA = {
     artist: "Natalie Imbruglia",
     image: "placeholder",
 }
+
+
