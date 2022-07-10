@@ -4,6 +4,7 @@ var btnL = document.querySelector("#OpenL")
 var btnS = document.querySelector("#OpenS")
 var discoBtn = document.querySelector("#disco")
 var discoInput = document.querySelector("#disco-search")
+var issueContainer = document.querySelector("#issues")
 //key for discography search
 const options = {
     method: 'GET',
@@ -12,6 +13,8 @@ const options = {
         'X-RapidAPI-Host': 'theaudiodb.p.rapidapi.com'
     }
 };
+//add key for concert search
+
 //Listener events for genre selection/button selection:
 
 //listener event needs to include modal pop up
@@ -33,20 +36,29 @@ function apiSearch() {
     //needs to exist within function 
     fetch(`https://theaudiodb.p.rapidapi.com/discography.php?s=${searchTerm}`, options)
         .then(function (response) {
-            if (!searchTerm.ok || searchTerm < 1) {
+            //edge case meeds work
+            if (!searchTerm.ok) {
             console.log ("invalid entry or information not available")
-
+//could add with var element- example--responseText.textContent = response.status
             return response.json()
             //console.log(response.status)(to check for error codes)
-        }
+       }
         })
         .then(function (data) {
             console.log(data)
+            //printData(data)
            for (let i = 0; i < data.album.length; i++) {
-                //for each item create an element (like h2)
+            //1. create element
+            //for each item create an element (like h2)
+            var albumTitle = document.createElement ("h2");
+            //2. style/content
+            albumTitle.textContent = data.album[i].strAlbum;
+            //albumTitle.setAttribute("href",data.album[i].strAlbum)
+            //albumTitle.setAttribute("target","_blank")
                 //then set the text content for the newly created element for the current item in the array
-                //append that newly created element to the div
                 console.log(data.album[i].strAlbum)
+                //append that newly created element to the div
+                issueContainer.append(albumTitle);
            }
         })
        .catch(function (er) {
