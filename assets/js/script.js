@@ -9,6 +9,8 @@ var discoBtn = document.querySelector("#disco")
 var discoInput = document.querySelector("#disco-search")
 
 
+
+
 //function to open a new page during concert search with local storage set
 conBtn.addEventListener("click", search) 
 
