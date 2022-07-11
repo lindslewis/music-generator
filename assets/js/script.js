@@ -7,7 +7,7 @@ var btnL = document.querySelector("#OpenL")
 var btnS = document.querySelector("#OpenS")
 var discoBtn = document.querySelector("#disco")
 var discoInput = document.querySelector("#disco-search")
-var issueContainer = document.querySelector("#issues")
+var discoContainer = document.querySelector("#disco-list")
 //key for discography search
 // create function to open a new page
 const option = {
@@ -132,7 +132,7 @@ function apiSearch() {
                 console.log(data.album[i].strAlbum)
                 console.log(data.album[i].intYearReleased)
                 //append that newly created element to the div
-                issueContainer.append(albumTitle);
+                discoContainer.append(albumTitle);
                 //window.setTimeout(() => {
                   //  issueContainer.append("")
                 //}, 5000);
