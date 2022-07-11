@@ -33,7 +33,7 @@
     position: relative;
     background-image: url("../images/hero_banner.jpg");
     background-size: cover;
-    height: auto;
+    /* height: auto; */
     background-attachment: scroll;
     background-repeat: no-repeat;
 }
@@ -269,6 +269,7 @@ footer {
     transition: 0.5s;
 }
 
+/* the after arrows are not quite right, come back to me!!!!! */
 #homeConA span:after {
     content: '\00bb';
     position: absolute;
