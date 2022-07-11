@@ -1,50 +1,84 @@
-/* base css file */
-
-/* body, and then h1 for the header for the title */
-/* main within the body, which contains the sections listed below */
-/* classes of each of our names, in their own sections: .Jovi .Lindsay .Stevie .Asiya*/
-/* each of these sections contains a button with an id each: #OpenA #OpenJ #OpenL #OpenS */
-/*  */
-
-/* play music from curated staff list from a spotify embedder */
-
-
-/* genre buttons will generate a modal for each playlist, which will include a "like" button for them to click and image of album cover, which if clicked, will populate another modal with info and discovery. then button at bottom for concert info.*/
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100&family=Loved+by+the+King&display=swap');
 
 /* for h1, gets the class "title is-1" */
 :root {
-    --background: #aac6b3;
-    --primary: #6a3937;
+    /* --background: #9F55C6; */
+    /* --background: #8D3DB8; */
+    --background:#8138A8;
+    --primary: #51454A;
     --accent: #023660;
-    --dark: #3b0d11;
+    --dark: #46222E;
     --light: #f8A29D;
+    --glow: #f35b53;
+    --bigGlow: #F0372D;
 }
 
 *{
     font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
 }
 .hero {
     position: relative;
-    background-image: url("../images/splash.jpg");
+    background-image: url("/assets/images/hero\ banner!!!\ copy.jpg");
     background-size: cover;
-    height: auto;
     background-attachment: scroll;
     background-repeat: no-repeat;
 }
-hero header {
+header {
+    position: relative;
     margin: 0 2px 2px 2px;
     padding: 1% 0 1% 5%;
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
     /* background-image: linear-gradient(to right, var(--background), var(--light), var(--primary), var(--dark)); */
 }
 
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px var(--light), 0 0 20px var(--light), 0 0 30px var(--glow), 0 0 40px var(--glow), 0 0 50px var(--glow), 0 0 60px var(--glow), 0 0 70px var(--bigGlow);
+    }
+    to {
+      text-shadow: 0 0 20px var(--light), 0 0 30px var(), 0 0 40px , 0 0 50px var(--glow), 0 0 60px var(--glow), 0 0 70px var(--bigGlow), 0 0 80px var(--bigGlow);
+    }
+  }
+
 #titleHeader {
     text-align: left;
+    color: white;
 }
 
+#subHeader {
+    color: white;
+}
+.tabs {
+    justify-content: space-evenly!important;
+}
+
+.tabs.is-boxed a {
+    border-color: transparent!important;
+    color: white!important;
+}
+
+.tabs.is-boxed li a:hover{
+    cursor: pointer;
+    background-color: var(--background)!important;
+    border-radius: 25px 25px 0 0!important;
+}
+/* when the user clicks a tab */
+.tabs.is-boxed li.is-active a {
+    background-color: var(--background)!important;
+    border-color: transparent!important;
+    color: white!important;
+    border-radius: 25px 25px 0 0!important;
+    
+}
+.tabText{
+    text-decoration: none;
+}
 body {
     position: relative;
-    background-image: url("../images/background-2.jpg");
+    /* background-image: url("../images/background-2.jpg"); */
     background-color: var(--background);
     background-attachment: fixed;
     background-repeat: repeat;
@@ -66,29 +100,78 @@ body::before{
     position: relative;
     padding: 2%;
     margin: 2%;
-    height: 100%;
+    height: 20%;
+
+}
+/* below is the styling for the cards!!!!!! */
+.allFour {
+    display: flex;
+    align-self: center;
+    border-radius: 5vh!important;
+    margin: 1%;
+    visibility: hidden;
+    /* the important addition overrides bulma's code */
+    /* background-image: linear-gradient(white, var(--light) 20%, var(--light), var(--light) 80%, white)!important; */
+    /* background-image: linear-gradient(var(--light), var(--light) 75%, white 75%, white); */
+    box-shadow: 2vh 2vh 1vh var(--dark)!important;
 }
 
-.allFour {
-    align-self: center;
-    border: 5px solid var(--light);
-    border-radius: 10px;
-    padding: 1%;
-    margin: 1%;
-    background-color: var(--light);
-    /* background-image: linear-gradient(var(--light), var(--light) 75%, white 75%, white); */
-    box-shadow: 5px 5px 3px var(--dark);
+.card-header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: none!important;
+    box-shadow: none!important;
 }
+.card-header-title {
+    font-size: large;
+    font-weight: bold;
+    padding: 3px;
+}
+
+.card-footer {
+    padding: 2vh;
+    border: none!important;
+    margin-top: 2vh;
+}
+.heartContainer {
+    outline: none;
+    width: fit-content;
+    height: fit-content;
+    padding: 0;
+    background: none;
+    border: 0;
+}
+
+.fa-heart {
+    padding: 0;
+    margin: 0;
+    color: var(--dark);
+}
+
+.trackNum {
+    text-align: end!important;
+}
+/* need/want to add hover effects with the cursor, but it's not registering. will come back to it. */
 
 .bottomBar {
+    max-width: 100vw;
     position: relative;
-    align-self: center;
+    text-align: center;
     border: 5px solid var(--light);
     border-radius: 10px;
     padding: 1%;
-    margin: 1%;
+    margin: 5%;
     background-color: var(--light);
     box-shadow: 5px 5px 3px var(--dark);
+}
+
+.fa-music::after {
+    color: var(--dark)!important;
+}
+
+.fa-compact-disc::after {
+    color: var(--dark)!important;
 }
 
 footer {
@@ -98,150 +181,3 @@ footer {
     font-weight: bold;
 
 }
-/* main {
-    
-} */
-
- /* Jovi's CSS portion */
- @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100&family=Loved+by+the+King&display=swap');
-
-*{
-    box-sizing: border-box;
-}
-
-body {
-    height: 100vh;
-    margin: 0;
-    font-family: 'Lato', sans-serif;
-    background-image: linear-gradient(
-    0deg, 
-    rgb(203,155,158) 23.8%, 
-    rgb(229,172,218)92%
-    );
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.music-container1 {
-    background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 0 20px 20px 0 rgba(222, 123, 212, 0.6);
-    display: flex;
-    padding: 20px 30px;
-    position: relative;
-    margin: 100px 0;
-    z-index: 10;
-}
-
-.img-container {
-    position: relative;
-    width: 110px;
-}
-
-.img-container::after {
-    content: '';
-    background-color: #fff;
-    height: 20px;
-    width: 20px;
-    position: absolute;
-    left: 50%;
-    bottom: 50%;
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.img-container img {
-    width: inherit;
-    height: 110px;
-    border-radius: 50%;
-    object-fit: cover;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-
-    animation: rotate 3s linear infinite;
-    animation-play-state: paused;
-}
-
-.music-container1.play .img-container img {
-    animation-play-state: running;
-
-}
-
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-.navigation1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
-}
-
-.action-btn {
-    background-color: #fff;
-    border: 0;
-    color: #937EA1;
-    font-size: 20px;
-    cursor: pointer;
-    padding: 10px;
-    margin: 0px 20px;
-}
-
-.action-btn-big {
-    color: #937EA1;
-    font-size: 30px;
-}
-
-action-btn:focus {
-    outline: 0;
-}
-
-.music-info {
-    background-color: rgba (225, 225, 225, 0.5);
-    border-radius: 15px 15px 0 0;
-    position: absolute;
-    top: 0;
-    left: 20px;
-    padding: 10px 10px 10px 150px;
-    width: calc(100% - 40px);
-    opacity: 0;
-    transform: translateY(0%);
-    transition: transform 0.3s ease-in, opacity 0.3s ease-in;
-}
-
-.music-info h4 {
-    margin: 0;
-}
-
-.music-container1.play .music-info {
-    opacity: 1;
-    transform: translate(-100%);
-}
-
-.progress-container1 {
-    background-color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 10px 0;
-    height: 4px;
-    width: 100%;
-}
-
-.progress1 {
-    background-color: #fe8daa;
-    border-radius: 5px;
-    height: 100%;
-    width: 50%;
-    transition: width 0.1s linear;
-}
-
