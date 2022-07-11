@@ -101,7 +101,7 @@
   }
   
   .music-info {
-    /* background-color: rgba(255, 150, 255, 0.5); */
+    background-color: rgba(255, 150, 255, 0.5);
     border-radius: 15px 15px 0 0;
     position: absolute;
     top: 0;
@@ -112,10 +112,6 @@
     transform: translateY(0%);
     transition: transform 0.3s ease-in, opacity 0.3s ease-in;
     z-index: 0;
-  }
-
-  #infoA{
-    background-color: rgba(255, 150, 255, 0.5);
   }
   
   .music-container.play .music-info {

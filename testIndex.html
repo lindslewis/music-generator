@@ -43,35 +43,42 @@
                     <p class="trackartistA">Track Artist</p>
                 </article>
                 <!-- the stuff in the content (for the slider, player, etc) were originally below, simply cut and paste them here, the divs were changed to sections and articles. below, the ID and class music-container were added -->
-                <section class ="playerA card-content music-container" id="music-containerA">
-                    <!-- pasted in player from Jovi's html, changing div tags. -->
-                    <section id="info" class="music-info">
-                        <h4 id="title"></h4>
-                        <!-- do we want to add the artist under the title? -->
-                        <section class="progress-container" id="progress-container">
-                          <article class="progressA" id="progressA"></article>
+                <section class ="playerA card-content">
+
+                    <section class="music-container" id="music-container">
+                        <section class="music-info">
+
+                            <h4 id="title"></h4>
+
+                                <section class="progress-container" id="progress-container">
+
+                                    <div class="progress" id="progress"></div>
+
+                                </section>
+                            </section>
+
+                                <audio src="/music/Torn.mp3" id="audio"></audio>
+                        
+                                <div class="img-container">
+                                <!-- <img src="" alt="music-cover" id="cover" /> -->
+                                </div>
+
+                                <section class="navigation">
+
+                                <button id="prev" class="action-btn">
+                                    <i class="fas fa-backward"></i>
+                                </button>
+
+                                <button id="play" class="action-btn action-btn-big">
+                                    <i class="fas fa-play"></i>
+                                </button>
+
+                                <button id="next" class="action-btn">
+                                    <i class="fas fa-forward"></i>
+                                </button>
+
+                            </section>
                         </section>
-                    </section>
-                    <audio src="/music/Torn.mp3" id="audio"></audio>
-                
-                    <section class="img-container">
-                        <!-- <img src="" alt="music-cover" id="cover" /> -->
-                    </section>
-    
-                    <section class="navigation">
-                        <!-- back button below -->
-                        <button id="prev" class="action-btnA">
-                          <i class="fas fa-backward"></i>
-                        </button>
-                        <!-- play button below -->
-                        <button id="play" class="action-btnA action-btn-big">
-                          <i class="fas fa-play"></i>
-                        </button>
-                        <!-- next button below -->
-                        <button id="next" class="action-btn">
-                          <i class="fas fa-forward"></i>
-                        </button>
-    
                     </section>
                 </section>
             
