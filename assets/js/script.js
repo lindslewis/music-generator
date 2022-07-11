@@ -1,6 +1,7 @@
 var searchInput = document.getElementById("concert-search")
 var conBtn = document.getElementById("concert")
-var concertDisplay = document.getElementById("concertDisplay")
+// var concertDisplay = document.getElementById("concertDisplay")
+var searches = JSON.parse(localStorage.getItem("searches")) || [];
 var btnA = document.querySelector("#OpenA")
 var btnJ = document.querySelector("#OpenJ")
 var btnL = document.querySelector("#OpenL")
@@ -10,71 +11,19 @@ var discoInput = document.querySelector("#disco-search")
 var discoContainer = document.querySelector("#disco-list")
 //key for discography search
 // create function to open a new page
-const option = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': '20d275890emsh80f93ddd6fe099dp1f29ebjsn35ed4dc50b17',
-		'X-RapidAPI-Host': 'concerts-artists-events-tracker.p.rapidapi.com'
-	}
-};
+conBtn.addEventListener("click", search) 
 
-function api(sTerm) {
-
-fetch(`https://concerts-artists-events-tracker.p.rapidapi.com/artist?name=${sTerm}&page=1`, option)
-
-	.then(function(response){
-        if(!response.ok){
-            console.log("error")
-        }else{
-            return response.json()
-        }
-    })
-
-    .then(function(data){
-        printData(data)
-        console.log(data)
-    })
-    .catch(function(er){
-        console.log(er)
-    });
-}
-
-function printData(data) {
-    
-    for (let i = 0; i < data.data.length; i++) {
-        const concert = data.data[i];
-
-        // create list item
-        // create div
-        // create an h3-store the name
-        // create 4 unique p tags that store specific data
-        // append all five to the div 
-        // append the div to the list item
-        var listItem = document.createElement("li")
-        var concertCard = document.createElement("div")
-        listItem.append(concertCard)
-        var concertTitle = document.createElement("h3")
-        concertTitle.textContent = concert.description
-        var start = document.createElement("p")
-        // var formatStart = concert.startDate
-        // formatStart = 
-        start.textContent = concert.startDate
-        var end = document.createElement("p")
-        end.textContent = concert.endDate
-        var loc = document.createElement("p")
-        loc.textContent = concert.location.name
-        var perf = document.createElement("p")
-        perf.textContent = concert.performer[0].name
-        concertCard.append(concertTitle, start, end, loc, perf)
-        concertDisplay.append(listItem);
-    }
-}
-conBtn.addEventListener("click", param) 
-function param(event) {
+function search(event) {
     event.preventDefault()
-    var sTerm = searchInput.value
 
-    api(sTerm)
+    localStorage.setItem("sTerm", searchInput.value);
+
+    searches.push(searchInput.value)
+    localStorage.setItem("searches", JSON.stringify(searches))
+
+    window.open('results.html', '_blank');
+        
+    
 }
  
 const options = {
