@@ -466,51 +466,41 @@
 
     <footer class="footer">
         <!-- column is-three-quarters -->
-        <section class="bottomBar">
-            <article>
-                <section>
+        <section class="bottomBar column is-10 is-offset-1">
     
                     <!-- below is for searching for concerts/events based on an artist -->
                     <!-- added classes to style, symbol to search input bar -->
                     <!-- field has-addons  -->
-                    <aside class="control has-icons-left">
+                <section id="concertSec" class="field has-addons">
+                    <p class="control is-expanded has-icons-left">
                    
-
-                            <input class="input is-medium is-rounded is-hovered" id="concert-search" type="text" placeholder="Enter Artist Here">
-
-                            <span class="icon is-left">
-                            <i class="fas fa-solid fa-music"></i>
-                            </span>
-
-                            <!-- <button id="concert "class="button">search events</button> -->
-
-                    </aside>
-
-                    <!-- <article class="field has-addons">
-                        <aside class="control">
-                          <input class="input" type="text" placeholder="Find a repository">
-                        </aside>
-                        <aside class="control">
-                          <a class="button is-info">
-                            Search
-                          </a>
-                        </aside>
-                    </article> -->
-    
-                    <!-- <button id ="concert"></button> -->
+                        <input class="input is-medium is-rounded is-hovered" id="concert-search" type="text" placeholder="Enter Artist Here">
+                            
+                        <span class="icon is-left">
+                        <i class="fas fa-solid fa-music"></i>
+                        </span>
+                    </p>
+                    <p id="conContainer" class="control">
+                        <a id="concert "class="button is-medium">search</a>
+                    </p>
+                </section>
                     <!-- below is for searching for more albums from an artist -->
                     <!-- adding symbol to the search input bar, plus classes for styling -->
-                    <aside class="control has-icons-left">
+                <section id="albumSec" class="field has-addons">
+                    <p class="control is-expanded has-icons-left">
+                   
                         <input class="input is-medium is-rounded is-hovered" id="disco-search" type="text" placeholder="Enter Artist Here">
+                                
                         <span class="icon is-left">
-                          <i class="fas fa-solid fa-compact-disc"></i>
+                        <i class="fas fa-solid fa-compact-disc"></i>
                         </span>
-                    </aside>
-    
-                    <button id= "disco">search catalog
-                    </button>
+                    </p>
+                    
+                   <p id="conContainer" class="control">
+                        <a id="disco "class="button is-medium">search</a>
+                    </p>
                 </section>
-            </article>
+            
            <section class="container" id="issues"></section>
         </section>
     
