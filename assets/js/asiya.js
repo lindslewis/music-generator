@@ -1,11 +1,11 @@
-const musicContainer = document.getElementById('music-container');
+const musicContainer = document.getElementById('music-containerA');
 const playBtn = document.getElementById('play');
 const prevBtn = document.getElementById('prev');
 const nextBtn = document.getElementById('next');
 
 const audio = document.getElementById('audio');
-const progress = document.getElementById('progress');
-const progressContainer = document.getElementById('progress-container');
+const progress = document.getElementById('progressA');
+const progressContainer = document.getElementById('progress-containerA');
 const title = document.getElementById('title');
 const cover = document.getElementById('cover');
 const currTime = document.querySelector('#currTime');

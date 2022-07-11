@@ -6,45 +6,91 @@
 /* each of these sections contains a button with an id each: #OpenA #OpenJ #OpenL #OpenS */
 /*  */
 
-/* play music from curated staff list from a spotify embedder */
 
 
-/* genre buttons will generate a modal for each playlist, which will include a "like" button for them to click and image of album cover, which if clicked, will populate another modal with info and discovery. then button at bottom for concert info.*/
 
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100&family=Loved+by+the+King&display=swap');
 
 /* for h1, gets the class "title is-1" */
 :root {
-    --background: #aac6b3;
-    --primary: #6a3937;
+    /* --background: #9F55C6; */
+    /* --background: #8D3DB8; */
+    --background:#8138A8;
+    --primary: #51454A;
     --accent: #023660;
-    --dark: #3b0d11;
+    --dark: #46222E;
     --light: #f8A29D;
+    --glow: #f35b53;
+    --bigGlow: #F0372D;
 }
 
 *{
     font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
 }
 .hero {
     position: relative;
-    background-image: url("../images/splash.jpg");
+    background-image: url("../images/hero_banner.jpg");
     background-size: cover;
     height: auto;
     background-attachment: scroll;
     background-repeat: no-repeat;
 }
-hero header {
+header {
+    position: relative;
     margin: 0 2px 2px 2px;
     padding: 1% 0 1% 5%;
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
     /* background-image: linear-gradient(to right, var(--background), var(--light), var(--primary), var(--dark)); */
 }
 
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px var(--light), 0 0 20px var(--light), 0 0 30px var(--glow), 0 0 40px var(--glow), 0 0 50px var(--glow), 0 0 60px var(--glow), 0 0 70px var(--bigGlow);
+    }
+    to {
+      text-shadow: 0 0 20px var(--light), 0 0 30px var(), 0 0 40px , 0 0 50px var(--glow), 0 0 60px var(--glow), 0 0 70px var(--bigGlow), 0 0 80px var(--bigGlow);
+    }
+  }
+
 #titleHeader {
     text-align: left;
+    color: white;
 }
 
+#subHeader {
+    color: white;
+}
+.tabs {
+    justify-content: space-evenly!important;
+}
+
+.tabs.is-boxed a {
+    border-color: transparent!important;
+    color: white!important;
+}
+
+.tabs.is-boxed li a:hover{
+    cursor: pointer;
+    background-color: var(--background)!important;
+}
+/* when the user clicks a tab */
+.tabs.is-boxed li.is-active a {
+    background-color: var(--background)!important;
+    border-color: transparent!important;
+    color: white!important;
+    border-radius: 25px 25px 0 0!important;
+    
+}
+.tabText{
+    text-decoration: none;
+}
 body {
     position: relative;
-    background-image: url("../images/background-2.jpg");
+    /* background-image: url("../images/background-2.jpg"); */
     background-color: var(--background);
     background-attachment: fixed;
     background-repeat: repeat;
@@ -74,8 +120,9 @@ body::before{
     align-self: center;
     border-radius: 5vh!important;
     margin: 1%;
+    /* visibility: hidden; */
     /* the important addition overrides bulma's code */
-    background-image: linear-gradient(white, var(--light) 20%, var(--light), var(--light) 80%, white)!important;
+    /* background-image: linear-gradient(white, var(--light) 20%, var(--light), var(--light) 80%, white)!important; */
     /* background-image: linear-gradient(var(--light), var(--light) 75%, white 75%, white); */
     box-shadow: 2vh 2vh 1vh var(--dark)!important;
 }
@@ -118,6 +165,143 @@ body::before{
 
 }
 
+/* jovi's player addition */
+.asiya {
+    background-image: linear-gradient(
+        0deg,
+        rgba(203, 155, 158, 1) 23.8%,
+        rgba(229, 172, 218, 1) 92%
+    );
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+
+/* jovi's addition */
+.music-containerA {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 20px 20px 0 rgba(222, 123, 225, 0.6);
+    display: flex;
+    padding: 20px 30px;
+    position: relative;
+    margin: 100px 0;
+    z-index: 10;
+}
+
+/* jovi's addition */
+.img-container {
+    position: relative;
+    width: 110px;
+}
+
+/* jovi's addition */
+.img-container::after {
+    content: '';
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    transform: translate(-50%, 50%);
+}
+
+/* jovi's addition */
+.music-container.play .img-container img {
+    animation-play-state: running;
+}
+
+/* jovi's addition */
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+/* jovi's addition */
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+
+  /*jovi's addition  */
+.action-btnA {
+  background-color: #fff;
+  border: 0;
+  color: #937EA1;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px;
+  margin: 0 20px;
+}
+
+  /*jovi's addition  */
+.action-btnA.action-btn-big {
+  color: #937EA1;
+  font-size: 30px;
+}
+
+  /*jovi's addition  */
+.action-btn:focus {
+  outline: 0;
+}
+
+  /*jovi's addition  */
+.music-infoA {
+  background-color: rgba(255, 150, 255, 0.5);
+  border-radius: 15px 15px 0 0;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: calc(100% - 40px);
+  padding: 10px 10px 10px 150px;
+  opacity: 0;
+  transform: translateY(0%);
+  transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+  z-index: 0;
+}
+
+  /*jovi's addition  */
+.music-containerA.play .music-infoA {
+  opacity: 1;
+  transform: translateY(-100%);
+}
+
+.music-infoA h4 {
+  margin: 0;
+}
+
+  /*jovi's addition  */
+.progress-containerA {
+  background: #B050EB;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+  height: 4px;
+  width: 100%;
+}
+
+  /*jovi's addition  */
+.progressA {
+  background-color: #C083FA;
+  border-radius: 5px;
+  height: 100%;
+  width: 0%;
+  transition: width 0.1s linear;
+}
 /* need/want to add hover effects with the cursor, but it's not registering. will come back to it. */
 
 .bottomBar {
@@ -133,11 +317,11 @@ body::before{
 }
 
 .fa-music::after {
-    color: var(--dark);
+    color: var(--dark)!important;
 }
 
 .fa-compact-disc::after {
-    color: var(--dark);
+    color: var(--dark)!important;
 }
 
 footer {
