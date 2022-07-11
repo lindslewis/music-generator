@@ -243,7 +243,7 @@ footer {
 
 #homeCon:hover {
     background: var(--background)!important;
-    padding-right: 5vh;
+    padding-right: 8vh;
 
 }
 
@@ -266,6 +266,15 @@ footer {
 #homeConA span {
     display: inline-block;
     position: relative;
+    transition: 0.5s;
+}
+
+#homeConA span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -2vh;
     transition: 0.5s;
 }
 
