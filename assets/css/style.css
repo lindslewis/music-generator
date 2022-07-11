@@ -86,9 +86,11 @@ header {
     border-radius: 25px 25px 0 0!important;
     
 }
+
 .tabText{
     text-decoration: none;
 }
+
 body {
     position: relative;
     /* background-image: url("../images/background-2.jpg"); */
@@ -166,7 +168,6 @@ body::before{
 
 .trackNum {
     text-align: end!important;
-
 }
 
 /* jovi's player addition */
