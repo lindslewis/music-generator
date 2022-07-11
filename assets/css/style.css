@@ -1,3 +1,15 @@
+/* base css file */
+
+/* body, and then h1 for the header for the title */
+/* main within the body, which contains the sections listed below */
+/* classes of each of our names, in their own sections: .Jovi .Lindsay .Stevie .Asiya*/
+/* each of these sections contains a button with an id each: #OpenA #OpenJ #OpenL #OpenS */
+/*  */
+
+
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100&family=Loved+by+the+King&display=swap');
 
 /* for h1, gets the class "title is-1" */
@@ -108,8 +120,10 @@ body::before{
     align-self: center;
     border-radius: 5vh!important;
     margin: 1%;
+    height: 25vh;
+    /* visibility: hidden; */
     /* the important addition overrides bulma's code */
-    background-image: linear-gradient(white, var(--light) 20%, var(--light), var(--light) 80%, white)!important;
+    /* background-image: linear-gradient(white, var(--light) 20%, var(--light), var(--light) 80%, white)!important; */
     /* background-image: linear-gradient(var(--light), var(--light) 75%, white 75%, white); */
     box-shadow: 2vh 2vh 1vh var(--dark)!important;
 }
@@ -118,6 +132,7 @@ body::before{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    height: 5%!important;
     border: none!important;
     box-shadow: none!important;
 }
@@ -131,6 +146,7 @@ body::before{
     padding: 2vh;
     border: none!important;
     margin-top: 2vh;
+    /* visibility: hidden; */
 }
 .heartContainer {
     outline: none;
@@ -152,32 +168,112 @@ body::before{
 
 }
 
+/* jovi's player addition */
+/* .asiya {
+    background-image: linear-gradient(
+        0deg,
+        rgba(203, 155, 158, 1) 23.8%,
+        rgba(229, 172, 218, 1) 92%
+    );
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+} */
+
 /* need/want to add hover effects with the cursor, but it's not registering. will come back to it. */
 
 .bottomBar {
-    max-width: 100vw;
+    display: inline-block;
     position: relative;
     text-align: center;
     border: 5px solid var(--light);
-    border-radius: 10px;
+    border-radius: 50px;
     padding: 1%;
     margin: 5%;
     background-color: var(--light);
     box-shadow: 5px 5px 3px var(--dark);
 }
 
-.fa-music::after {
+#concertSec {
+    display:inline-block;
+}
+
+#albumSec {
+    display:inline-block;
+}
+/* this below works, but I want it to turn the dark color once the input box is clicked, which I can't find in the elements in the console, so I'll come back to it */
+/* .fa-music {
     color: var(--dark)!important;
 }
 
-.fa-compact-disc::after {
+.fa-compact-disc {
     color: var(--dark)!important;
+} */
+#conContainer{
+    border-left: 3px solid var(--light)!important;
+    border-radius: 0 9999px 9999px 0!important;
 }
+/* #concert {
+    border-left: 3px solid var(--background)!important;
+    border-radius: 0 9999px 9999px 0!important;
+} */
 
 footer {
+    background-color: var(--background)!important;
     position: relative;
     max-height: 10%;
     text-align: center;
     font-weight: bold;
+    padding: 2%!important;
 
 }
+
+/* specifics for the results file */
+#homeCon {
+    margin-right: 5vh!important;
+    padding: 2px;
+    background-color:var(--background)!important;
+    border-radius: 0 0 25px 25px;
+}
+
+#homeCon:hover {
+    background: var(--background)!important;
+    padding-right: 8vh;
+
+}
+
+#homeCon:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#homeConA {
+    color: white!important;
+    padding-left: 5px!important;
+    padding-right: 5px!important;
+    margin: 0 5px 0 5px!important;
+    background: var(--background)!important;
+    border: none;
+    width: 15vh;
+    transition: all 0.5s;
+}
+
+#homeConA span {
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#homeConA span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -2vh;
+    transition: 0.5s;
+}
+

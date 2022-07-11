@@ -13,6 +13,7 @@ function api(sTerm) {
 fetch(`https://concerts-artists-events-tracker.p.rapidapi.com/artist?name=${sTerm}&page=1`, option)
 
 	.then(function(response){
+        console.log(response)
         if(!response.ok){
             console.log("error")
         }else{

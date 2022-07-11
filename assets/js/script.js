@@ -1,13 +1,14 @@
 var searchInput = document.getElementById("concert-search")
 var conBtn = document.getElementById("concert")
-// var concertDisplay = document.getElementById("concertDisplay")
-var searches = JSON.parse(localStorage.getItem("searches")) || [];
+var searches = [];
 var btnA = document.querySelector("#OpenA")
 var btnJ = document.querySelector("#OpenJ")
 var btnL = document.querySelector("#OpenL")
 var btnS = document.querySelector("#OpenS")
 var discoBtn = document.querySelector("#disco")
 var discoInput = document.querySelector("#disco-search")
+
+
 
 
 //function to open a new page during concert search with local storage set
@@ -18,12 +19,19 @@ function search(event) {
 
     localStorage.setItem("sTerm", searchInput.value);
 
+    document.getElementById("search-log").innerText = searches;
     searches.push(searchInput.value)
     localStorage.setItem("searches", JSON.stringify(searches))
 
-    window.open('results.html', '_blank');
-         
+    console.log(searches)
+
+    window.open(
+        'results.html',
+        '_blank'    
+     )
+    
 }
+
 //function to open a new page during discography search with local storage set
 discoBtn.addEventListener("click", scanDisco)
 
