@@ -140,15 +140,11 @@
     transition: width 0.1s linear;
   }
 
-  #returnHome {
-    /* text-decoration: none;
-    text-align: center;
-    justify-content: center;
-    font-size: large; */
+#returnHome {
   background-image: linear-gradient(92.88deg, 
-  #746CC0 9.16%, 
-  #A051EB 43.89%, 
-  #FA3BAB 64.72%);
+  #9FC5E8 14.56%, 
+  #9FA1E8 43.89%, 
+  #C29FE8 64.72%);
   border-radius: 8px;
   border-style: none;
   box-sizing: border-box;
@@ -171,5 +167,4 @@
 returnHome:hover {
   box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
   transition-duration: .1s;
-
 }
