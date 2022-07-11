@@ -269,7 +269,7 @@ footer {
     transition: 0.5s;
 }
 
-#homeConA span:after {
+#homeCon span:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
