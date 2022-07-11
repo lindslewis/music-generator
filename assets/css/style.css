@@ -76,6 +76,7 @@ header {
 .tabs.is-boxed li a:hover{
     cursor: pointer;
     background-color: var(--background)!important;
+    border-radius: 25px 25px 0 0!important;
 }
 /* when the user clicks a tab */
 .tabs.is-boxed li.is-active a {
@@ -120,7 +121,7 @@ body::before{
     align-self: center;
     border-radius: 5vh!important;
     margin: 1%;
-    /* visibility: hidden; */
+    visibility: hidden;
     /* the important addition overrides bulma's code */
     /* background-image: linear-gradient(white, var(--light) 20%, var(--light), var(--light) 80%, white)!important; */
     /* background-image: linear-gradient(var(--light), var(--light) 75%, white 75%, white); */
