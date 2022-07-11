@@ -10,6 +10,8 @@ var discoBtn = document.querySelector("#disco")
 var discoInput = document.querySelector("#disco-search")
 
 
+
+
 //function to open a new page during concert search with local storage set
 conBtn.addEventListener("click", search) 
 
@@ -17,7 +19,7 @@ function search(event) {
     event.preventDefault()
 
     localStorage.setItem("sTerm", searchInput.value);
-
+//document.getElementById("search-log").innerText = searches;
     searches.push(searchInput.value)
     localStorage.setItem("searches", JSON.stringify(searches))
 
