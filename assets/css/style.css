@@ -31,9 +31,12 @@
 }
 .hero {
     position: relative;
-    background-image: url("../images/hero_banner.jpg");
+    background-image: url("/assets/images/heroBanner.jpg");
     background-size: cover;
+<<<<<<< HEAD
     /* height: auto; */
+=======
+>>>>>>> 993c67e23bf9a2366e994d11805c140ff6e66690
     background-attachment: scroll;
     background-repeat: no-repeat;
 }
