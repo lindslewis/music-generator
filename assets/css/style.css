@@ -100,8 +100,12 @@ body::before{
     position: relative;
     padding: 2%;
     margin: 2%;
+<<<<<<< HEAD
     height: 20%;
 
+=======
+    height: 100%;
+>>>>>>> dev
 }
 /* below is the styling for the cards!!!!!! */
 .allFour {
@@ -109,9 +113,14 @@ body::before{
     align-self: center;
     border-radius: 5vh!important;
     margin: 1%;
+<<<<<<< HEAD
     visibility: hidden;
     /* the important addition overrides bulma's code */
     /* background-image: linear-gradient(white, var(--light) 20%, var(--light), var(--light) 80%, white)!important; */
+=======
+    /* the important addition overrides bulma's code */
+    background-image: linear-gradient(white, var(--light) 20%, var(--light), var(--light) 80%, white)!important;
+>>>>>>> dev
     /* background-image: linear-gradient(var(--light), var(--light) 75%, white 75%, white); */
     box-shadow: 2vh 2vh 1vh var(--dark)!important;
 }
@@ -151,7 +160,13 @@ body::before{
 
 .trackNum {
     text-align: end!important;
+<<<<<<< HEAD
 }
+=======
+
+}
+
+>>>>>>> dev
 /* need/want to add hover effects with the cursor, but it's not registering. will come back to it. */
 
 .bottomBar {
