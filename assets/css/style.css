@@ -31,9 +31,8 @@
 }
 .hero {
     position: relative;
-    background-image: url("../images/hero_banner.jpg");
+    background-image: url("/assets/images/heroBanner.jpg");
     background-size: cover;
-    height: auto;
     background-attachment: scroll;
     background-repeat: no-repeat;
 }
