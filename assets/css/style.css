@@ -232,3 +232,40 @@ footer {
     padding: 2%!important;
 
 }
+
+/* specifics for the results file */
+#homeCon {
+    margin-right: 5vh!important;
+    padding: 2px;
+    background-color:var(--background)!important;
+    border-radius: 0 0 25px 25px;
+}
+
+#homeCon:hover {
+    background: var(--background)!important;
+    padding-right: 5vh;
+
+}
+
+#homeCon:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#homeConA {
+    color: white!important;
+    padding-left: 5px!important;
+    padding-right: 5px!important;
+    margin: 0 5px 0 5px!important;
+    background: var(--background)!important;
+    border: none;
+    width: 15vh;
+    transition: all 0.5s;
+}
+
+#homeConA span {
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
