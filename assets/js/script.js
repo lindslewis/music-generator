@@ -1,3 +1,7 @@
+var searchInput = document.getElementById("concert-search")
+var conBtn = document.getElementById("concert")
+// var concertDisplay = document.getElementById("concertDisplay")
+var searches = JSON.parse(localStorage.getItem("searches")) || [];
 var btnA = document.querySelector("#OpenA")
 var btnJ = document.querySelector("#OpenJ")
 var btnL = document.querySelector("#OpenL")
@@ -6,6 +10,22 @@ var discoBtn = document.querySelector("#disco")
 var discoInput = document.querySelector("#disco-search")
 var issueContainer = document.querySelector("#issues")
 //key for discography search
+// create function to open a new page
+conBtn.addEventListener("click", search) 
+
+function search(event) {
+    event.preventDefault()
+
+    localStorage.setItem("sTerm", searchInput.value);
+
+    searches.push(searchInput.value)
+    localStorage.setItem("searches", JSON.stringify(searches))
+
+    window.open('results.html', '_blank');
+        
+    
+}
+ 
 const options = {
     method: 'GET',
     headers: {
