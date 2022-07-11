@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;1,100&display=swap" rel="stylesheet">
     
     
-    <title>placeholder</title>
+    <title>Beats Collective</title>
 </head>
 <body>
 <!-- 
@@ -19,12 +19,18 @@
         <h1 id="titleHeader" class="title is-1">&#11088; Best Beats for Anyone's Mood &#11088;</h1>
         <h2 class="subtitle is-3">placeholder 2</h2>
     </header> -->
+    <header class="hero-body">
+        <h1 id="titleHeader" class="title is-1">beats collective</h1>
+        <h2 id="subHeader" class="subtitle is-3">your place for music curation and exploration</h2>
+    </header>
 
-    <hero class="hero is-quarterheight">
-        <header class="hero-body">
-            <h1 id="titleHeader" class="title is-1">&#11088; Best Beats for Anyone's Mood &#11088;</h1>
-            <h2 class="subtitle is-3">placeholder 2</h2>
-        </header>
+    <hero class="hero is-fullheight-with-navbar">
+
+        <section class="navbar-menu">
+            <section class="navbar-start">
+                <button class="navbar-item button"></button>
+            </section>
+        </section>
     </hero>
 
     <!-- hardcoded section of song -->
@@ -40,21 +46,40 @@
                 <p class="tracknameA">Track Name</p>
                 <p class="trackartistA">Track Artist</p>
             </article>
-            <!-- the stuff in the content (for the slider, player, etc) were originally below, simply cut and paste them here, the divs were changed to sections and articles. -->
-            <section class ="playerA card-content">
-                <section class="buttons"></section>
-                    <article class="prev-trackA" onclick="prevTrack()">
-                        <i class="fa fa-step-backward fa-2x"></i>
-                    </article>
-                    <article class="playpause-trackA" onclick="playpauseTrack()">
-                        <i class="fa fa-play-circle fa-5x"></i>
-                    </article>
-                    <article class="next-trackA" onclick="nextTrack()">
-                        <i class="fa fa-step-forward fa-2x"></i>
-                    </article>
+            <!-- the stuff in the content (for the slider, player, etc) were originally below, simply cut and paste them here, the divs were changed to sections and articles. below, the ID and class music-container were added -->
+            <section class ="playerA card-content music-containerA" id="music-containerA">
+                <!-- pasted in player from Jovi's html, changing div tags. -->
+                <section class="music-infoA">
+                    <h4 id="title"></h4>
+                    <!-- do we want to add the artist under the title? -->
+                    <section class="progress-containerA" id="progress-containerA">
+                      <article class="progressA" id="progressA"></article>
+                    </section>
                 </section>
+                <audio src="/music/Torn.mp3" id="audio"></audio>
+            
+                <section class="img-container">
+                    <!-- <img src="" alt="music-cover" id="cover" /> -->
+                </section>
+
+                <section class="navigation">
+                    <!-- back button below -->
+                    <button id="prev" class="action-btnA">
+                      <i class="fas fa-backward"></i>
+                    </button>
+                    <!-- play button below -->
+                    <button id="play" class="action-btnA action-btn-big">
+                      <i class="fas fa-play"></i>
+                    </button>
+                    <!-- next button below -->
+                    <button id="next" class="action-btn">
+                      <i class="fas fa-forward"></i>
+                    </button>
+
+                </section>
+            </section>
         
-                <!-- seek slider, changed divs to section and p-->
+                <!-- seek slider, changed divs to section and p
                 <section class="slider_container">
                     <p class="current-timeA">00:00</p>
                     <input type="range" min="1" max="100"
@@ -63,24 +88,25 @@
                 </section>
         
                 <!-- volume slider, changed divs to section-->
-                <section class="slider_container">
+                <!-- <section class="slider_container">
                     <i class="fa fa-volume-down"></i>
                     <input type="range" min="1" max="100"
                     value="99" class="volume_slider" onchange="setVolume()">
                     <i class="fa fa-volume-up"></i>
-                </section>
+                </section> --> 
 
                 <footer class="card-footer columns is-vcentered">
                     <!-- below is added to be the "like" button. linked to nowhere for now -->
                     <button class="heartContainer column is-one-quarter">
                         <i class="heart fa-regular fa-heart fa-2x"></i>
                     </button>
+
+                    <!-- we still need the tracker for what song of 10 we are on -->
                     <p class="trackNum now-playingA column">Playing 1 of 10</p>
                     <!-- <button class="heartContainer button is-hovered is-responsive card-footer-item">
                         <span class="heart icon is-large">
                             <i class="fa-regular fa-heart fa-2x"></i> -->
                 </footer>
-            </section>
          
         </section>
 
@@ -93,49 +119,6 @@
 
             <!-- Asiya's hardcoded songs -->
  <!-- got rid of the button here since it will be presenting differently than originally planned, sections currently to be able to minimize all the files lol -->
-        <section>
-            <!--Natalie Imbruglia // torn -->
-            <audio>
-                <source src="../project audio files/Natalie Imbruglia - Torn.mp3" controls>
-            </audio>
-            <!-- The Band Perry // Done  -->
-            <audio>
-                <source src="../project audio files/Done - The Band Perry.mp3" controls>
-            </audio>
-            <!-- Carrie Underwood- Two Black Cadillacs -->
-            <audio>
-                <source src="../project audio files/Two Black Cadillacs.mp3" controls>
-            </audio>
-            <!-- The Beatles- Blackbird -->
-            <audio>
-                <source src="../project audio files/Blackbird (Remastered 2009).mp3" controls>
-            </audio>
-            <!-- Kiiara- Gold -->
-            <audio>
-                <source src="../project audio files/Kiiara - Gold.mp3" controls>
-            </audio>
-            <!-- Khalid- Location -->
-            <audio>
-                <source src="../project audio files/Khalid - Location.mp3" controls>
-            </audio>
-            <!-- Adele- Love in the Dark -->
-            <audio>
-                <source src="../project audio files/Adele - Love In The Dark.mp3" controls>
-            </audio>
-            <!-- Fall Out Boy- Centuries -->
-            <audio>
-                <source src="../project audio files/Centuries - Fall Out Boy.mp3" controls>
-            </audio>
-            <!-- Florida Georgia Line- Cruise -->
-            <audio>
-                <source src="../project audio files/Florida Georgia Line - Cruise.mp3" controls>
-            </audio>
-            <!-- Jonas Brothers- Year 3000 -->
-            <audio>
-                <source src="../project audio files/Jonas Brothers- Year 3000.mp3" controls>
-            </audio>
-
-        </section>
 
         
             <!--Jovi's card~~~~  -->
@@ -192,49 +175,6 @@
              
             </section>
     
-            <!-- jovi's hardcoded songs below -->
-        <section>
-            <!-- Hozier -- talk -->
-            <audio>
-                <source src="../project audio files/Hozier - Talk.mp3" controls>
-            </audio>
-            <!-- Hozier -- Almost (sweet music) -->
-            <audio>
-                <source src="../project audio files/Hozier - Almost (Sweet Music).mp3" controls>
-            </audio>
-        <!-- Kaye -- howl -->
-        <audio>
-            <source src="../project audio files/Kaye - Howl.mp3" controls>
-        </audio>
-            <!-- Pitbull -- Bon, bon -->
-            <audio>
-                <source src="../project audio files/Pitbull- Bon Bon.mp3" controls>
-            </audio>
-            <!-- Adam Lambert -- Superpower -->
-            <audio>
-                <source src="../project audio files/Adam Lambert - Superpower.mp3" controls>
-            </audio>
-            <!-- Mindless Self Indulgence -- For the Love of God -->
-            <audio>
-                <source src="../project audio files/Mindless Self Indulgence - For the Love of God .mp3" controls>
-            </audio>
-            <!-- 2Pac, Roger, Dr. Dre -- California Love -->
-            <audio>
-                <source src="../project audio files/2Pac-- California Love (Original Version).mp3" controls>
-            </audio>
-            <!-- 2Pac -- Ghetto Gospel -->
-            <audio>
-                <source src="../project audio files/2pac - Ghetto Gospel.mp3" controls>
-            </audio>
-            <!-- Elton John -- the bitch is back -->
-            <audio>
-                <source src="../project audio files/Elton John - The Bitch Is Back (Remastered).mp3" controls>
-            </audio>
-        <!-- -- My Chemical Romance -- vampire money -->
-        <audio>
-            <source src="../project audio files/My Chemical Romance - Vampire Money.mp3" controls>
-        </audio>
-        </section>
         <!-- Lindsay's hardcoded songs -->
 
         <section class="allFour lindsay card column is-one-half">
@@ -289,48 +229,7 @@
             </section>
        
             <!-- Lindsay hardcoded songs -->
-        <section> 
-            <!-- Pearl Jam-- Dance of the Clairvoyants -->
-            <audio>
-                <source src="../project audio files/Pearl Jam - Dance Of The Clairvoyants.mp3" controls>
-            </audio>
-            <!-- Yultron feat Kellin Quinn--The Bottom -->
-            <audio>
-                <source src="../project audio files/Yultron (feat. Kellin Quinn)- The Bottom .mp3" controls>
-            </audio>
-            <!-- Gorillaz-- The Valley of the Pagans -->
-            <audio>
-                <source src="../project audio files/Gorillaz ft. Beck - The Valley of The Pagans.mp3" controls>
-            </audio>
-            <!-- Novo Amor-- Opaline -->
-            <audio>
-                <source src="../project audio files/Novo Amor - Opaline.mp3" controls>
-            </audio>
-            <!-- Flor (Messyhair remix) -- Warm Blood -->
-            <audio>
-                <source src="../project audio files/Flor - warm blood (messyhair remix).mp3" controls>
-            </audio>
-            <!-- INZO-- Overthinker -->
-            <audio>
-                <source src="../project audio files/INZO - Overthinker.mp3" controls>
-            </audio>
-            <!-- Badflower -- Promise Me -->
-            <audio>
-                <source src="../project audio files/Badflower- Promise Me.mp3" controls>
-            </audio>
-            <!-- KRANE -- I'll Be Good -->
-            <audio>
-                <source src="../project audio files/KRNE - I'll Be Good.mp3" controls>
-            </audio>
-            <!-- Kendrik Lamar -- DNA -->
-            <audio>
-                <source src="../project audio files/DNA - Kendrick Lamar.mp3" controls>
-            </audio>
-            <!-- The Jezebels -- A Little Piece -->
-            <audio>
-                <source src="../project audio files/The Jezebels- A Little Piece.mp3" controls>
-            </audio>
-        </section>
+
 
 
     <section class="allFour stevie card column is-one-half">
@@ -384,61 +283,32 @@
          
         </section>
 
-    <!-- Stevie's hardcoded songs -->
-        <section>
-            <!-- Sharon Van Etten- Seventeen (or Every Time the Sun Comes Up) -->
-            <audio>
-                <source src="../project audio files/Sharon Van Etten - Every Time The Sun Comes Up.mp3" controls>
-            </audio>
-            <!-- Kyle Craft- Heartbreak Junky -->
-            <audio>
-                <source src="../project audio files/Kyle Craft - Heartbreak Junky.mp3" controls>
-            </audio>
-            <!-- Chastity Belt- Black Sail -->
-            <audio>
-                <source src="../project audio files/Chastity Belt - Black Sail.mp3" controls>
-            </audio>
-            <!-- Marlon Williams-  Dark Child -->
-            <audio>
-                <source src="../project audio files/Marlon Williams - Dark Child.mp3" controls>
-            </audio>
-            <!-- Black Rebel Motorcycle Club- Sweet Feeling -->
-            <audio>
-                <source src="../project audio files/Black Rebel Motorcycle Club - Sweet Feeling.mp3" controls>
-            </audio>
-            <!-- Ezra Furman- Every Feeling -->
-            <audio>
-                <source src="../project audio files/Ezra Furman - Every Feeling.mp3" controls>
-            </audio>
-            <!-- Yann Tiersen Porz Goret -->
-            <audio>
-                <source src="../project audio files/Yann Tiersen - Porz Goret.mp3" controls>
-            </audio>
-            <!-- Mura Masa- give me The ground -->
-            <audio>
-                <source src="../project audio files/Mura Masa - Give Me the Ground.mp3" controls>
-            </audio>
-            <!-- Aldous Harding - Imagining My Man -->
-            <audio>
-                <source src="../project audio files/Aldous Harding - Imagining My Man.mp3" controls>
-            </audio>
-            <!-- Angel Olsen- Heart Shaped Face -->
-            <audio>
-                <source src="../project audio files/Angel Olsen - Heart Shaped Face.mp3" controls>
-            </audio>
-
-        </section>
-
 
         <section class="bottomBar column is-three-quarters">
             <article>
-                <aside>
-                    <input type="text" id="concert-search" placeholder="Enter Artist Here"></input>
+                <section>
+
+                    <!-- below is for searching for concerts/events based on an artist -->
+                    <!-- added classes to style, symbol to search input bar -->
+                    <aside class="control has-icons-left">
+                        <input class="input is-medium is-rounded is-hovered" id="concert-search" type="text" placeholder="Enter Artist Here">
+                        <span class="icon is-left">
+                          <i class="fas fa-solid fa-music"></i>
+                        </span>
+                    </aside>
+
                     <button id ="concert"> Hit up some concerts!!!</button>
-                    <input type="text" id="disco-search" placeholder="Enter Artist Here"></input>
-                    <button id="disco">Search Entire Catalogue!!</button>
-                    <!--<button onclick="removeAll()">Reset Search</button>-->
-                </aside>
+                    <!-- below is for searching for more albums from an artist -->
+                    <!-- adding symbol to the search input bar, plus classes for styling -->
+                    <aside class="control has-icons-left">
+                        <input class="input is-medium is-rounded is-hovered" id="disco-search" type="text" placeholder="Enter Artist Here">
+                        <span class="icon is-left">
+                          <i class="fas fa-solid fa-compact-disc"></i>
+                        </span>
+                    </aside>
+
+                    <button id= "disco">Search Entire Catalogue!!</button>
+                </section>
             </article>
         </section>
     </main>
@@ -449,6 +319,7 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/997d2a4a51.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/asiya.js"></script>
     <script src="./assets/js/script.js"></script>
     </body>
 </html>
