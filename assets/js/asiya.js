@@ -9,7 +9,8 @@
 // const title = document.getElementById('title');
 // const cover = document.getElementById('cover');
 
-const musicContainer = document.getElementsByClassName('music-container');
+const musicContainer = document.getElementsByClassName('music-container')[0];
+console.log(musicContainer)
 const playBtn = document.getElementById('play');
 const prevBtn = document.getElementById('prev');
 const nextBtn = document.getElementById('next');
