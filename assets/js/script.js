@@ -19,12 +19,6 @@ function search(event) {
 
     localStorage.setItem("sTerm", searchInput.value);
 
-    document.getElementById("search-log").innerText = searches;
-    searches.push(searchInput.value)
-    localStorage.setItem("searches", JSON.stringify(searches))
-
-    console.log(searches)
-
     window.open(
         'HTML/results.html',
         '_blank'    
