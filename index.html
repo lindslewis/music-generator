@@ -17,7 +17,6 @@
 </head>
 
 <body>
-
     <header>
         <h1 id="titleHeader" class="title is-1">beats collective</h1>
         <h2 id="subHeader" class="subtitle is-3">your place for music curation and exploration</h2>
@@ -25,65 +24,141 @@
 
     <hero class="hero is-fullheight-with-navbar">
         <section class="hero-head"></section>
-        <main id="mainPage" class="container columns">
-            <footer class="card-footer columns is-vcentered"></footer>
-        </section>
 
+    <main id="mainPage" class="container columns">
 
-            <section class="bottomBar column is-three-quarters">
-                <article>
-                    <section>
-                        <aside class="control has-icons-left">
-                            <input class="input is-medium is-rounded is-hovered" id="concert-search" type="text"
-                                placeholder="Enter Artist Here">
-                            <span class="icon is-left">
-                                <i class="fas fa-solid fa-music"></i>
-                            </span>
-                        </aside>
-
-                        <button id="concert"> Hit up some concerts!!!</button>
-                        <!-- below is for searching for more albums from an artist -->
-                        <!-- adding symbol to the search input bar, plus classes for styling -->
-                        <aside class="control has-icons-left">
-                            <input class="input is-medium is-rounded is-hovered" id="disco-search" type="text"
-                                placeholder="Enter Artist Here">
-                            <span class="icon is-left">
-                                <i class="fas fa-solid fa-compact-disc"></i>
-                            </span>
-                        </aside>
-
-                        <button id="disco">Search Entire Catalogue!!</button>
+        <!-- changed this from a normal container to a card -->
+        <section class="allFour asiya card column">
+            <!-- I made a header to contain the titles of the genres/playlist and the track name and artist.  -->
+            <article class="card-header">
+                <h1 class="card-header-title">heartbreakers and healers with asiya</h1>
+            </article>
+            <!-- the stuff in the content (for the slider, player, etc) were originally below, simply cut and paste them here, the divs were changed to sections and articles. below, the ID and class music-container were added -->
+            <section class="playerA card-content">
+                <!-- pasted in player from Jovi's html, changing div tags. -->
+                <section class="music-container" id="asiyaMusicContainer">
+                    <section class="amusic-info">
+                        <h4 id="title"></h4>
+                        <!-- do we want to add the artist under the title? -->
+                        <section class="progress-containerA" id="progress-containerA">
+                            <article class="progressA" id="progressA"></article>
+                        </section>
                     </section>
-                </article>
-                <section class="container" id="issues"></section>
+                    <audio src="/music/Torn.mp3" id="audio"></audio>
+
+                    <section class="img-container"></section>
+                    <!-- <img src="" alt="music-cover" id="cover" /> -->
+                    <section class="navigation">
+                        <!-- back button below -->
+                        <button id="prev" class="action-btnA">
+                            <i class="fas fa-backward"></i>
+                        </button>
+                        <!-- play button below -->
+                        <button id="play" class="action-btnA action-btn-big">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <!-- next button below -->
+                        <button id="next" class="action-btn">
+                            <i class="fas fa-forward"></i>
+                        </button>
+                    </section>
+                </section>
             </section>
-        </main>
-
-
-
-        <!-- tab bar on hero -->
-        <section class="hero-foot">
-            <nav class="tabs is-boxed is-fullwidth">
-                <article class="container">
-                    <ul>
-                        <li class="tabContain"><a id="asiya" href="./players/asiyacopy.html" class="tabText">love with
-                                asiya</a></li>
-                        <li class="tabContain"><a id="jovi" href="./players/jovi copy.html" class="tabText">elevate with
-                                jovi</a></li>
-                        <li class="tabContain"><a id="stevie" href="./players/stevie copy.html" class="tabText">chill with
-                                stevie</a></li>
-                        <li class="tabContain"><a id="lindsay" href="./players/lindsay copy.html" class="tabText">vibe
-                                with lindsay</a></li>
-                    </ul>
-                </article>
-            </nav>
         </section>
+
+        <!-- changed this from a normal container to a card -->
+        <section class="allFour jovi card column">
+            <article class="card-header">
+                <h1 class="card-header-title">hitting high tier modes with jovi</h1>
+            </article>
+            <!-- the stuff in the content (for the slider, player, etc) were originally below, simply cut and paste them here, the divs were changed to sections and articles. -->
+            <section class="playerJ card-content">
+                <section class="buttons"></section>
+            </section>
+        </section>
+
+        <section class="allFour lindsay card column">
+            <!-- I made a header to contain the titles of the genres/playlist and the track name and artist.  -->
+            <article class="card-header">
+                <h1 class="card-header-title">ultimate trap and dance vibes with lindsay</h1>
+            </article>
+            <!-- the stuff in the content (for the slider, player, etc) were originally below, simply cut and paste them here, the divs were changed to sections and articles. -->
+            <section class="playerL card-content">
+                <section class="buttons"></section>
+            </section>
+        </section>
+
+        <section class="allFour stevie card column">
+            <!-- I made a header to contain the titles of the genres/playlist and the track name and artist.  -->
+            <article class="card-header">
+                <h1 class="card-header-title">chill out with stevie</h1>
+            </article>
+            <!-- the stuff in the content (for the slider, player, etc) were originally below, simply cut and paste them here, the divs were changed to sections and articles. -->
+            <section class="playerS card-content">
+                <section class="buttons"></section>
+            </section>
+        </section>
+    </main>
+
+    <section class="hero-foot">
+        <nav class="tabs is-boxed is-fullwidth">
+            <article class="container">
+                <ul>
+                    <li class="tabContain"><a class="tabText">love with asiya</a></li>
+                    <li class="tabContain"><a class="tabText">elevate with jovi</a></li>
+                    <li class="tabContain"><a class="tabText">chill with stevie</a></li>
+                    <li class="tabContain"><a class="tabText">vibe with lindsay</a></li>
+                </ul>
+            </article>
+        </nav>
+    </section>
     </hero>
 
 
-<!-- 
-    <script src="https://kit.fontawesome.com/997d2a4a51.js" crossorigin="anonymous"></script>
+
+
+    <footer class="footer">
+        <section class="bottomBar column is-6 is-offset-3">
+
+            <section id="concertSec" class="field has-addons">
+                <p class="control is-expanded has-icons-left">
+
+                    <input class="input is-medium is-rounded is-hovered" id="concert-search" type="text"
+                        placeholder="Enter Artist Name Here for Concert Info">
+
+                    <span class="icon is-left">
+                        <i class="fas fa-solid fa-music"></i>
+                    </span>
+                </p>
+                <p id="conContainer" class="control">
+                    <a id="concert" class="button is-medium">search</a>
+                </p>
+            </section>
+
+            <section id="albumSec" class="field has-addons">
+                <p class="control is-expanded has-icons-left">
+
+                    <input class="input is-medium is-rounded is-hovered" id="disco-search" type="text"
+                        placeholder="Enter Artist Name Here for Album Info">
+
+                    <span class="icon is-left">
+                        <i class="fas fa-solid fa-compact-disc"></i>
+                    </span>
+                </p>
+
+                <p id="conContainer" class="control">
+                    <a id="disco" class="button is-medium">search</a>
+                </p>
+            </section>
+
+        </section>
+
+    </footer>
+
     <script src="./assets/js/asiya.js"></script>
-    <script src="./assets/js/script.js"></script> -->
+    <script src="https://kit.fontawesome.com/997d2a4a51.js" crossorigin="anonymous"></script>
+
+    <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
