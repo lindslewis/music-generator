@@ -129,4 +129,5 @@ audio.addEventListener('timeupdate', durTime);
 
 //return button to return to inital homepage
 document.getElementById("returnHome").onclick = function () {
-  location.href = "/index.html" };
+  location.href="/index.html"
+};
