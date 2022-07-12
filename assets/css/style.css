@@ -23,6 +23,9 @@
     --light: #f8A29D;
     --glow: #f35b53;
     --bigGlow: #F0372D;
+    --neonGlow: #FF1199;
+    --pinkGlow: #F7008D;
+    --otherGlow: #F7004E;
     --lavBlue: #D8DCFF;
     --funBed: #291720;
     --bigBanan: #FFD966;
@@ -47,7 +50,7 @@
 header {
     position: relative;
     margin: 0 2px 2px 2px;
-    padding: 1% 0 1% 5%;
+    padding-top: 35vh;
     -webkit-animation: glow 2s ease-in-out infinite alternate;
     -moz-animation: glow 2s ease-in-out infinite alternate;
     animation: glow 2s ease-in-out infinite alternate;
@@ -56,21 +59,31 @@ header {
 
 @-webkit-keyframes glow {
     from {
-      text-shadow: 0 0 10px var(--light), 0 0 20px var(--light), 0 0 30px var(--glow), 0 0 40px var(--glow), 0 0 50px var(--glow), 0 0 60px var(--glow), 0 0 70px var(--bigGlow);
+      text-shadow: 0 0 10px var(--light), 0 0 20px var(--light), 0 0 30px var(--light), 0 0 40px var(--glow), 0 0 50px var(--glow), 0 0 60px var(--bigGlow), 0 0 70px var(--bigGlow);
     }
     to {
-      text-shadow: 0 0 20px var(--light), 0 0 30px var(), 0 0 40px , 0 0 50px var(--glow), 0 0 60px var(--glow), 0 0 70px var(--bigGlow), 0 0 80px var(--bigGlow);
+      text-shadow: 0 0 20px var(--light), 0 0 30px var(--glow), 0 0 40px , 0 0 50px var(--bigGlow), 0 0 60px var(--pinkGlow), 0 0 70px var(--pinkGlow), 0 0 80px var(--pinkGlow);
     }
   }
 
 #titleHeader {
-    text-align: left;
     color: white;
 }
 
 #subHeader {
     color: white;
 }
+
+#ventureBtn {
+    color: white!important;
+    font-weight: bold!important;
+    border-radius: 0 0 30px 30px;
+}
+
+#ventureBtn:hover {
+    background-color: var(--background);
+}
+
 .tabs {
     justify-content: space-evenly!important;
 }
@@ -96,6 +109,7 @@ header {
 
 .tabText{
     text-decoration: none;
+    font-weight: bold!important;
 }
 
 body {
@@ -203,11 +217,11 @@ body::before{
     align-items: center;
     position: relative;
     text-align: center;
-    border: 5px solid var(--bigBanan);
+    border: 5px solid var(--neonGlow);
     border-radius: 50px;
     padding: 1%;
     margin: 5%;
-    background-color: var(--bigBanan);
+    background-color: var(--neonGlow);
     box-shadow: 5px 5px 3px var(--dark);
 }
 
@@ -246,15 +260,13 @@ body::before{
 } */
 #conContainer{
     border-left: 3px solid var(--light)!important;
-    border-radius: 0 9999px 9999px 0!important;
+
 }
-/* #concert {
-    border-left: 3px solid var(--background)!important;
-    border-radius: 0 9999px 9999px 0!important;
-} */
+
 
 footer {
-    background-color: var(--background)!important;
+    background-image: url(../images/backgroundHex.jpg)!important;
+    background-size: cover;
     position: relative;
     max-height: 10%;
     text-align: center;
