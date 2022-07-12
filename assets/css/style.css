@@ -23,6 +23,14 @@
     --light: #f8A29D;
     --glow: #f35b53;
     --bigGlow: #F0372D;
+    --neonGlow: #FF1199;
+    --pinkGlow: #F7008D;
+    --otherGlow: #F7004E;
+    --lavBlue: #D8DCFF;
+    --funBed: #291720;
+    --bigBanan: #FFD966;
+    --lemonPop: #FFDF80;
+    --bigBirb: #FFC61A;
 }
 
 *{
@@ -31,16 +39,18 @@
 }
 .hero {
     position: relative;
+    /* this is not working :( */
     background-image: url("../images/hero_banner.jpg");
     background-size: cover;
     height: auto;
     background-attachment: scroll;
     background-repeat: no-repeat;
 }
+
 header {
     position: relative;
     margin: 0 2px 2px 2px;
-    padding: 1% 0 1% 5%;
+    padding-top: 35vh;
     -webkit-animation: glow 2s ease-in-out infinite alternate;
     -moz-animation: glow 2s ease-in-out infinite alternate;
     animation: glow 2s ease-in-out infinite alternate;
@@ -49,21 +59,31 @@ header {
 
 @-webkit-keyframes glow {
     from {
-      text-shadow: 0 0 10px var(--light), 0 0 20px var(--light), 0 0 30px var(--glow), 0 0 40px var(--glow), 0 0 50px var(--glow), 0 0 60px var(--glow), 0 0 70px var(--bigGlow);
+      text-shadow: 0 0 10px var(--light), 0 0 20px var(--light), 0 0 30px var(--light), 0 0 40px var(--glow), 0 0 50px var(--glow), 0 0 60px var(--bigGlow), 0 0 70px var(--bigGlow);
     }
     to {
-      text-shadow: 0 0 20px var(--light), 0 0 30px var(), 0 0 40px , 0 0 50px var(--glow), 0 0 60px var(--glow), 0 0 70px var(--bigGlow), 0 0 80px var(--bigGlow);
+      text-shadow: 0 0 20px var(--light), 0 0 30px var(--glow), 0 0 40px , 0 0 50px var(--bigGlow), 0 0 60px var(--pinkGlow), 0 0 70px var(--pinkGlow), 0 0 80px var(--pinkGlow);
     }
   }
 
 #titleHeader {
-    text-align: left;
     color: white;
 }
 
 #subHeader {
     color: white;
 }
+
+#ventureBtn {
+    color: white!important;
+    font-weight: bold!important;
+    border-radius: 0 0 30px 30px;
+}
+
+#ventureBtn:hover {
+    background-color: var(--background);
+}
+
 .tabs {
     justify-content: space-evenly!important;
 }
@@ -86,9 +106,12 @@ header {
     border-radius: 25px 25px 0 0!important;
     
 }
+
 .tabText{
     text-decoration: none;
+    font-weight: bold!important;
 }
+
 body {
     position: relative;
     /* background-image: url("../images/background-2.jpg"); */
@@ -118,6 +141,7 @@ body::before{
 /* below is the styling for the cards!!!!!! */
 .allFour {
     display: flex;
+    direction: column;
     align-self: center;
     border-radius: 5vh!important;
     margin: 1%;
@@ -166,7 +190,6 @@ body::before{
 
 .trackNum {
     text-align: end!important;
-
 }
 
 /* jovi's player addition */
@@ -188,24 +211,45 @@ body::before{
 /* need/want to add hover effects with the cursor, but it's not registering. will come back to it. */
 
 .bottomBar {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     position: relative;
     text-align: center;
-    border: 5px solid var(--light);
+    border: 5px solid var(--neonGlow);
     border-radius: 50px;
     padding: 1%;
     margin: 5%;
-    background-color: var(--light);
+    background-color: var(--neonGlow);
     box-shadow: 5px 5px 3px var(--dark);
 }
 
 #concertSec {
+    display: flex;
+    width: 600px;
+}
+
+#albumSec {
+    display: flex;
+    width: 600px;
+    /* width: 40vw; */
+}
+
+#disco {
+    border-radius:0 50px 50px 0!important;
+}
+
+#concert {
+    border-radius:0 50px 50px 0!important;
+}
+/* #concertSec {
     display:inline-block;
 }
 
 #albumSec {
     display:inline-block;
-}
+} */
 /* this below works, but I want it to turn the dark color once the input box is clicked, which I can't find in the elements in the console, so I'll come back to it */
 /* .fa-music {
     color: var(--dark)!important;
@@ -216,15 +260,13 @@ body::before{
 } */
 #conContainer{
     border-left: 3px solid var(--light)!important;
-    border-radius: 0 9999px 9999px 0!important;
+
 }
-/* #concert {
-    border-left: 3px solid var(--background)!important;
-    border-radius: 0 9999px 9999px 0!important;
-} */
+
 
 footer {
-    background-color: var(--background)!important;
+    background-image: url(../images/backgroundHex.jpg)!important;
+    background-size: cover;
     position: relative;
     max-height: 10%;
     text-align: center;
@@ -234,47 +276,47 @@ footer {
 }
 
 /* specifics for the results file */
-#homeCon {
+.homeCon {
     margin-right: 5vh!important;
     padding: 2px;
     background-color:var(--background)!important;
     border-radius: 0 0 25px 25px;
 }
 
-#homeCon:hover {
+.homeCon:hover {
     background: var(--background)!important;
-    padding-right: 8vh;
-
+    padding-right: 4vh;
 }
 
-#homeCon:hover span:after {
+.homeCon:hover span:after {
     opacity: 1;
     right: 0;
 }
 
-#homeConA {
+.homeConA {
     color: white!important;
     padding-left: 5px!important;
     padding-right: 5px!important;
     margin: 0 5px 0 5px!important;
     background: var(--background)!important;
-    border: none;
+    border: none!important;
     width: 15vh;
     transition: all 0.5s;
 }
 
-#homeConA span {
+.homeConA span {
     display: inline-block;
     position: relative;
     transition: 0.5s;
 }
 
-#homeConA span:after {
+/* the after arrows are not quite right, come back to me!!!!! */
+.homeConA span:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
     top: 0;
-    right: -2vh;
+    right: -1vh;
     transition: 0.5s;
 }
 
