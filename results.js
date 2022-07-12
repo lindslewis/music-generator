@@ -71,4 +71,9 @@ function printData(data) {
 var sTerm = localStorage.getItem("sTerm")
 
 api(sTerm)
+
+
+// return home function, from Lindsay :)
+document.getElementById("homeCon").onclick = function () {
+    location.href = "results.html" };
  
