@@ -26,7 +26,7 @@ function search(event) {
     console.log(searches)
 
     window.open(
-        'results.html',
+        'HTML/results.html',
         '_blank'    
      )
     
@@ -39,7 +39,7 @@ function scanDisco(event) {
     event.preventDefault()
     var searchTerm = discoInput.value
     localStorage.setItem("searchTerm", searchTerm);
-    window.open('disco.html', '_blank');
+    window.open('HTML/disco.html', '_blank');
 }
 
 
