@@ -265,7 +265,8 @@ body::before{
 
 
 footer {
-    background-color: var(--background)!important;
+    background-image: url(../images/backgroundHex.jpg)!important;
+    background-size: cover;
     position: relative;
     max-height: 10%;
     text-align: center;
