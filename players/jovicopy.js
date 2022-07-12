@@ -127,6 +127,7 @@ audio.addEventListener('ended', nextSong);
 // Time of song
 audio.addEventListener('timeupdate', durTime);
 
-//return home function
+//return button to return to inital homepage
 document.getElementById("returnHome").onclick = function () {
-  location.href = "/index.html" };
+  location.href="/index.html"
+};
