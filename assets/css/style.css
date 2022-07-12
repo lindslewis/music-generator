@@ -73,6 +73,17 @@ header {
 #subHeader {
     color: white;
 }
+
+#ventureBtn {
+    color: white!important;
+    font-weight: bold!important;
+    border-radius: 0 0 30px 30px;
+}
+
+#ventureBtn:hover {
+    background-color: var(--background);
+}
+
 .tabs {
     justify-content: space-evenly!important;
 }
@@ -98,6 +109,7 @@ header {
 
 .tabText{
     text-decoration: none;
+    font-weight: bold!important;
 }
 
 body {
