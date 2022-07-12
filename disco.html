@@ -3,15 +3,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="assets\css\style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;1,100&display=swap" rel="stylesheet">
+    <title>Beats Collective | Discography</title>
 </head>
 <body>
-    <main>
+    <header>
+        <h1 id="titleHeader" class="title is-1">beats collective</h1>
+        <h2 id="subHeader" class="subtitle is-3"> explore more</h2>
+    </header>
+
+    <hero class="hero is-fullheight-with-navbar">
+
+        <main>
+
+            <section class="hero-head">
+                <nav class="navbar">
+                    <section class="navbar-end">
+                        <section id="homeDisco" class="container">
+                            <a id="homeDiscoA" class="navbar-item button" href="/disco.html">
+                                <span>Home</span>
+                            </a>
+                        </section>
+                    </section>
+                </nav>
+            </section>
+
+            <section>
+                <ul id="disco-list"></ul>
+            </section>
+        </main>
+    </hero>
         <!--<section class="container" id="disco-list"></section>-->
-        <section>
-            <ul id="disco-list"></ul>
-        </section>
+     
     </main>
-    <script src="/assets/js/disco.js"></script>
+    <script src="assets/js/disco.js"></script>
 </body>
 </html>
