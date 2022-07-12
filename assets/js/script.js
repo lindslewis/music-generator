@@ -19,11 +19,11 @@ function search(event) {
 
     localStorage.setItem("sTerm", searchInput.value);
 
-    document.getElementById("search-log").innerText = searches;
-    searches.push(searchInput.value)
-    localStorage.setItem("searches", JSON.stringify(searches))
+    // document.getElementById("search-log").innerText = searches;
+    // searches.push(searchInput.value)
+    // localStorage.setItem("searches", JSON.stringify(searches))
 
-    console.log(searches)
+    // console.log(searches)
 
     window.open(
         'HTML/results.html',
@@ -38,10 +38,11 @@ discoBtn.addEventListener("click", scanDisco)
 function scanDisco(event) {
     event.preventDefault()
     var searchTerm = discoInput.value
+    if (searchTerm.length>0){
     localStorage.setItem("searchTerm", searchTerm);
     window.open('HTML/disco.html', '_blank');
 }
-
+}
 
 //option to like song (Listener event click box)
 //if I like a song (could be if/ else if statements)
