@@ -205,11 +205,11 @@ body::before{
     align-items: center;
     position: relative;
     text-align: center;
-    border: 5px solid var(--bigBanan);
+    border: 5px solid var(--neonGlow);
     border-radius: 50px;
     padding: 1%;
     margin: 5%;
-    background-color: var(--bigBanan);
+    background-color: var(--neonGlow);
     box-shadow: 5px 5px 3px var(--dark);
 }
 
