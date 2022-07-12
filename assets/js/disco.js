@@ -47,3 +47,8 @@ function printData(data) {
 
 var searchTerm = localStorage.getItem("searchTerm")
 apiSearch (searchTerm)
+
+// return home function, from Lindsay :)
+document.getElementById("homeDisco").onclick = function () {
+    location.href = "disco.html" };
+ 

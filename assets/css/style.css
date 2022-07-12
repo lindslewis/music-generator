@@ -23,6 +23,11 @@
     --light: #f8A29D;
     --glow: #f35b53;
     --bigGlow: #F0372D;
+    --lavBlue: #D8DCFF;
+    --funBed: #291720;
+    --bigBanan: #FFD966;
+    --lemonPop: #FFDF80;
+    --bigBirb: #FFC61A;
 }
 
 *{
@@ -31,15 +36,14 @@
 }
 .hero {
     position: relative;
-    background-image: url("/assets/images/heroBanner.jpg");
+    /* this is not working :( */
+    background-image: url("../images/hero_banner.jpg");
     background-size: cover;
-<<<<<<< HEAD
-    /* height: auto; */
-=======
->>>>>>> 993c67e23bf9a2366e994d11805c140ff6e66690
+    height: auto;
     background-attachment: scroll;
     background-repeat: no-repeat;
 }
+
 header {
     position: relative;
     margin: 0 2px 2px 2px;
@@ -123,6 +127,7 @@ body::before{
 /* below is the styling for the cards!!!!!! */
 .allFour {
     display: flex;
+    direction: column;
     align-self: center;
     border-radius: 5vh!important;
     margin: 1%;
@@ -192,24 +197,45 @@ body::before{
 /* need/want to add hover effects with the cursor, but it's not registering. will come back to it. */
 
 .bottomBar {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     position: relative;
     text-align: center;
-    border: 5px solid var(--light);
+    border: 5px solid var(--bigBanan);
     border-radius: 50px;
     padding: 1%;
     margin: 5%;
-    background-color: var(--light);
+    background-color: var(--bigBanan);
     box-shadow: 5px 5px 3px var(--dark);
 }
 
 #concertSec {
+    display: flex;
+    width: 600px;
+}
+
+#albumSec {
+    display: flex;
+    width: 600px;
+    /* width: 40vw; */
+}
+
+#disco {
+    border-radius:0 50px 50px 0!important;
+}
+
+#concert {
+    border-radius:0 50px 50px 0!important;
+}
+/* #concertSec {
     display:inline-block;
 }
 
 #albumSec {
     display:inline-block;
-}
+} */
 /* this below works, but I want it to turn the dark color once the input box is clicked, which I can't find in the elements in the console, so I'll come back to it */
 /* .fa-music {
     color: var(--dark)!important;
