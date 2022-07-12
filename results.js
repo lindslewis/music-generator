@@ -44,6 +44,8 @@ function printData(data) {
         var listItem = document.createElement("li")
         var concertCard = document.createElement("div")
         listItem.append(concertCard)
+        var bigHeader = document.createElement("h1")
+        bigHeader.textContent = "Showing All Concerts:"
         var concertTitle = document.createElement("h3")
         concertTitle.textContent = concert.description
         var startHeader = document.createElement("h5")
@@ -62,7 +64,7 @@ function printData(data) {
         perfHeader.textContent = "Performer(s):"
         var perf = document.createElement("p")
         perf.textContent = concert.performer[0].name
-        concertCard.append(concertTitle, startHeader, start, endHeader, end, locHeader, loc, perfHeader, perf)
+        concertCard.append(bigHeader, concertTitle, startHeader, start, endHeader, end, locHeader, loc, perfHeader, perf)
         concertDisplay.append(listItem);
     }
 }
