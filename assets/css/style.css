@@ -299,6 +299,40 @@ footer {
 }
 
 /* for the playlist html below*/
+.playlistCon {
+    margin: 3vh!important;
+}
+
+.playHeaders {
+    background: var(--background)!important;
+}
+.playName {
+    color: white!important;
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+.playBody {
+    margin:0 1vh 0 1vh!important;
+}
+
+.asiyaCard {
+    border-color: white!important;
+    border-width: 1vh!important;
+    border-radius: 5vh!important;
+}
+
+.songTitle {
+    color: var(--dark)!important;
+    margin-bottom: 1vh!important;
+}
+
+.songArtist {
+    color: var(--bigGlow)!important;
+    padding-left: 3vh;
+}
+
+
 
 /* week 6 mini proj for appending for style */
 /* bulma, just have them going into a specific html spot, style that spot regardless of me not seeing it, they'll inherit the style of their parent :) */
