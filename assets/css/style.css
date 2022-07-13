@@ -12,10 +12,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100&family=Loved+by+the+King&display=swap');
 
-/* for h1, gets the class "title is-1" */
+
 :root {
-    /* --background: #9F55C6; */
-    /* --background: #8D3DB8; */
     --background:#8138A8;
     --primary: #51454A;
     --accent: #023660;
@@ -37,26 +35,46 @@
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
 }
-.hero {
+/* the hero banner!!!! */
+.mainHero {
     position: relative;
-    /* this is not working :( */
-    background-image: url("../images/hero_banner.jpg");
+    background-image: url("../images/herobanner.png");
     background-size: cover;
     height: auto;
     background-attachment: scroll;
     background-repeat: no-repeat;
 }
 
-header {
+/* playlist html hero banner */
+.heroPlay {
+    position: relative;
+    background-image: url("../images/backgroundHex.jpg");
+    background-size: cover;
+    height: auto;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+}
+
+/* header info for the 3 other tabs */
+.separatePage {
+    position: relative;
+    margin: 0 2vw 2vh 2vw;
+    padding: 2vh 0 2vh 3vw;
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+/* header info for the index.html */
+.mainHead {
     position: relative;
     margin: 0 2px 2px 2px;
     padding-top: 35vh;
     -webkit-animation: glow 2s ease-in-out infinite alternate;
     -moz-animation: glow 2s ease-in-out infinite alternate;
     animation: glow 2s ease-in-out infinite alternate;
-    /* background-image: linear-gradient(to right, var(--background), var(--light), var(--primary), var(--dark)); */
 }
 
+/* animation for the glow effect on the title */
 @-webkit-keyframes glow {
     from {
       text-shadow: 0 0 10px var(--light), 0 0 20px var(--light), 0 0 30px var(--light), 0 0 40px var(--glow), 0 0 50px var(--glow), 0 0 60px var(--bigGlow), 0 0 70px var(--bigGlow);
@@ -74,16 +92,18 @@ header {
     color: white;
 }
 
+/* the button to bring the user to the bottom of the page, to the search bars */
 #ventureBtn {
     color: white!important;
     font-weight: bold!important;
     border-radius: 0 0 30px 30px;
 }
-
+/* hover effects for the above button */
 #ventureBtn:hover {
     background-color: var(--background);
 }
 
+/* the four tabs containing the players below */
 .tabs {
     justify-content: space-evenly!important;
 }
@@ -92,7 +112,7 @@ header {
     border-color: transparent!important;
     color: white!important;
 }
-
+/* when the user hovers one of the 4 tabs */
 .tabs.is-boxed li a:hover{
     cursor: pointer;
     background-color: var(--background)!important;
@@ -133,83 +153,14 @@ body::before{
 }
 
 #mainPage {
+    justify-content: center;
     position: relative;
     padding: 2%;
     margin: 2%;
     height: 100%;
 }
-/* below is the styling for the cards!!!!!! */
-.allFour {
-    display: flex;
-    direction: column;
-    align-self: center;
-    border-radius: 5vh!important;
-    margin: 1%;
-    height: 25vh;
-    /* visibility: hidden; */
-    /* the important addition overrides bulma's code */
-    /* background-image: linear-gradient(white, var(--light) 20%, var(--light), var(--light) 80%, white)!important; */
-    /* background-image: linear-gradient(var(--light), var(--light) 75%, white 75%, white); */
-    box-shadow: 2vh 2vh 1vh var(--dark)!important;
-}
 
-.card-header {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    height: 5%!important;
-    border: none!important;
-    box-shadow: none!important;
-}
-.card-header-title {
-    font-size: large;
-    font-weight: bold;
-    padding: 3px;
-}
-
-.card-footer {
-    padding: 2vh;
-    border: none!important;
-    margin-top: 2vh;
-    /* visibility: hidden; */
-}
-.heartContainer {
-    outline: none;
-    width: fit-content;
-    height: fit-content;
-    padding: 0;
-    background: none;
-    border: 0;
-}
-
-.fa-heart {
-    padding: 0;
-    margin: 0;
-    color: var(--dark);
-}
-
-.trackNum {
-    text-align: end!important;
-}
-
-/* jovi's player addition */
-/* .asiya {
-    background-image: linear-gradient(
-        0deg,
-        rgba(203, 155, 158, 1) 23.8%,
-        rgba(229, 172, 218, 1) 92%
-    );
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Lato', sans-serif;
-    margin: 0;
-} */
-
-/* need/want to add hover effects with the cursor, but it's not registering. will come back to it. */
-
+/* below is the styling for the bright pink box at the bottom of the index.html, including the buttons and search input bars */
 .bottomBar {
     display: flex;
     flex-direction: column;
@@ -227,13 +178,13 @@ body::before{
 
 #concertSec {
     display: flex;
-    width: 600px;
+    width: 95%;
 }
 
 #albumSec {
     display: flex;
-    width: 600px;
-    /* width: 40vw; */
+    width: 95%;
+   
 }
 
 #disco {
@@ -243,27 +194,18 @@ body::before{
 #concert {
     border-radius:0 50px 50px 0!important;
 }
-/* #concertSec {
-    display:inline-block;
-}
 
-#albumSec {
-    display:inline-block;
-} */
-/* this below works, but I want it to turn the dark color once the input box is clicked, which I can't find in the elements in the console, so I'll come back to it */
-/* .fa-music {
-    color: var(--dark)!important;
-}
-
-.fa-compact-disc {
-    color: var(--dark)!important;
-} */
 #conContainer{
     border-left: 3px solid var(--light)!important;
 
 }
 
+#playlist-page{
+    border-radius: 50px!important;
+    padding: 2vh 4vh 2vh 4vh!important;
+}
 
+/* the footer information below */
 footer {
     background-image: url(../images/backgroundHex.jpg)!important;
     background-size: cover;
@@ -275,7 +217,8 @@ footer {
 
 }
 
-/* specifics for the results file */
+/* specifics for the results file, disco file below */
+/* homeCon is the container for the return to home button in the top right of the page */
 .homeCon {
     margin-right: 5vh!important;
     padding: 2px;
@@ -283,16 +226,8 @@ footer {
     border-radius: 0 0 25px 25px;
 }
 
-.homeCon:hover {
-    background: var(--background)!important;
-    padding-right: 4vh;
-}
 
-.homeCon:hover span:after {
-    opacity: 1;
-    right: 0;
-}
-
+/* this is for the anchor link styling itself for the return to home buttons in the other html files */
 .homeConA {
     color: white!important;
     padding-left: 5px!important;
@@ -301,22 +236,99 @@ footer {
     background: var(--background)!important;
     border: none!important;
     width: 15vh;
-    transition: all 0.5s;
 }
 
-.homeConA span {
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
+
+.cardCon {
+    align-content: center!important;
+    padding-top: 5vh;
+    padding-bottom:5vh;
+}
+/* card for the results from the user search */
+.apiCon {
+    display: flex;
+    size: fit-content;
+    padding-left: 5vw;
+    margin: 3vh 0 0 2vw!important;
+    border-radius: 10vh!important;
+    box-shadow: 2vh 2vh 1vh var(--dark)!important;
+    background-color: var(--background)!important;
+}
+.resultsBox {
+    border: none!important;
+    box-shadow: none!important;
+    background: var(--background)!important;
+    border-radius: 20vh 20vh 0 0!important;
+}
+.resultSub {
+    color: white!important;
+    padding-left: 5%!important;
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+
 }
 
-/* the after arrows are not quite right, come back to me!!!!! */
-.homeConA span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -1vh;
-    transition: 0.5s;
+.cardBack {
+    background-image: url(../images/backgroundHex.jpg)!important;
+    border-radius: 0 0 10vh 10vh!important;
+}
+/* the text itself for the results from the user searches */
+
+.resultText h2{
+    color: var(--dark)!important;
+    font-size: medium!important;
+}
+
+/* for the playlist html below*/
+.playlistCon {
+    margin: 0 auto!important;
+}
+
+/* card headers */
+.playHeaders {
+    background: var(--background)!important;
+    justify-content: center!important;
+}
+/* card header text */
+.playName {
+    color: white!important;
+    justify-content: center!important;
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+/* card body */
+.playBody {
+    margin-top: 0!important;
+    padding-top: 2vh!important;
+
+}
+
+/* ind card overall */
+.indCard {
+    border-color: white!important;
+    border-width: 1vh!important;
+    border-radius: 5vh!important;
+}
+
+/* titles of songs in cards */
+.songTitle {
+    color: var(--dark)!important;
+    margin-bottom: 1vh!important;
+    margin-top: 1vh!important;
+}
+
+/* text for song artist in cards */
+.songArtist {
+    color: var(--neonGlow)!important;
+    padding-left: 5vh;
+    margin-bottom: 2vh!important;
+    font-weight: bold!important;
+}
+
+/* images in cards */
+.cardImg {
+    border-radius: 5vh 5vh 0 0!important;
 }
 

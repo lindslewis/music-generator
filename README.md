@@ -5,7 +5,7 @@ https://lindslewis.github.io/music-generator/
 
 ## Project Description
 
-This project was a collabortive group effort based on the USER STORY outlined here:
+This project was a collaborative group effort based on the USER STORY outlined here:
 AS A music lover
 I WANT to be exposed to new music
 SO THAT I can expand my musical horizons
@@ -14,13 +14,25 @@ This application includes HTML, CSS, JavaScript, CSS framework, media players (l
 
 One API allows the user to search for upcoming concerts based on artist name. The other API allows the user to search for discographies based on artist name. 
 
+## Table of Contents
+
+1. [How to Use](##HowtoUse)
+2. [Known Bugs/Possible Future Edits](##KnownBugs/PossibleFutureEdits)
+3. [Credits and Resources](##CreditsandResources)
+
+<img src=./assets/images/browserHomePagejpg.jpg>
+<img src=./assets/images/mediaplayer.jpg>
+<img src=./assets/images/searchCapabilities.jpg>
+<img src=./assets/images/discographyList.jpg>
+<img src=./assets/images/playlistsExample.jpg>
+
 ## How to Use
 
 When the User opens the browser to the deployed site, they are presented with four separate media players -- each of these media player holds a playlist of songs compiled by the corresponding developer. In order to go to player, the user must hit the desired playlist tab: 
 - "love with asiya"
 - "elevate with jovi"
 - "chill with stevie"
-- vibe with lindsay"
+- "vibe with lindsay"
 
 The media players have previous/next/pause/play buttons, as well as a clickable progress bar, to navigate through the songs and/or playlists.
 
@@ -30,10 +42,7 @@ At the bottom of the page, a button with the text "return home" will allow the u
 
 At the top of the homepage, in a nav-bar are the words "venture further", when clicked, this takes the user to the bottom of the homepage. At the bottom of the homepage are clickable/searchable text boxes. One prompts the user to "Enter Artist Name Here for Concert Info", or "Enter Artist Name Here for Album Info". When the user types in their request, the user will then be taken to a new tab, containing their requested information.
 
-<img src=./assets/images/browserHomePagejpg.jpg>
-<img src=./assets/images/mediaplayer.jpg>
-<img src=./assets/images/searchCapabilities.jpg>
-<img src=./assets/images/discographyList.jpg>
+
 
 ## Known Bugs/Possible Future Edits
 
