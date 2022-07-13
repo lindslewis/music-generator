@@ -12,7 +12,7 @@ const currTime = document.querySelector('#currTime');
 const durTime = document.querySelector('#durTime');
 
 // Song titles
-const songs = ["Dance of The Clairvoyants", "The Bottom (feat. Kellin Quinn)", "The Valley of The Pagans (feat. Beck)", "Opaline", "warm blood (messyhair remix)", "Overthinker", "Promise Me", "I'll Be Good", "DNA.", "A Little Piece"];
+const songs = ["Dance Of The Clairvoyants", "The Bottom (feat. Kellin Quinn)", "The Valley of The Pagans (feat. Beck)", "Opaline", "warm blood (messyhair remix)", "Overthinker", "Promise Me", "I'll Be Good", "DNA.", "A Little Piece"];
 
 // Keep track of song
 let songIndex = 9;

@@ -19,11 +19,6 @@ function search(event) {
 
     localStorage.setItem("sTerm", searchInput.value);
 
-    document.getElementById("search-log").innerText = searches;
-    searches.push(searchInput.value)
-    localStorage.setItem("searches", JSON.stringify(searches))
-
-    console.log(searches)
 
     window.open(
         'HTML/results.html',
@@ -46,7 +41,3 @@ function scanDisco(event) {
 //option to like song (Listener event click box)
 //if I like a song (could be if/ else if statements)
 //?local storaege and get item related to liked songs vs recent searches
-
-
-
-
