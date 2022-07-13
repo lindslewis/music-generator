@@ -313,7 +313,9 @@ footer {
     animation: glow 2s ease-in-out infinite alternate;
 }
 .playBody {
-    margin:0 1vh 0 1vh!important;
+    margin-top: 0!important;
+    padding-top: 2vh!important;
+
 }
 
 .asiyaCard {
@@ -325,11 +327,14 @@ footer {
 .songTitle {
     color: var(--dark)!important;
     margin-bottom: 1vh!important;
+    margin-top: 1vh!important;
 }
 
 .songArtist {
-    color: var(--bigGlow)!important;
-    padding-left: 3vh;
+    color: var(--neonGlow)!important;
+    padding-left: 5vh;
+    margin-bottom: 2vh!important;
+    font-weight: bold!important;
 }
 
 
