@@ -1,5 +1,8 @@
 # beats collective
 
+## Deployed Link
+https://lindslewis.github.io/music-generator/
+
 ## Project Description
 
 This project was a collabortive group effort based on the USER STORY outlined here:
@@ -7,14 +10,25 @@ AS A music lover
 I WANT to be exposed to new music
 SO THAT I can expand my musical horizons
 
-This application is focused on introducing User to new songs and musical artists that they may enjoy. Through HTML, CSS, JavaScript, Bulma CSS framework, media players linked to music in MP3 format and the incorporation of two separate sever-side APIs the User is able to listen to songs/artists recommended by the web developers. There are two different APIs. One that allows User to search for upcoming concerts based on artist name and one that allows User to search complete discographies based on artist name.
+This application includes HTML, CSS, JavaScript, CSS framework, media players (linked to music in MP3 format and the incorporation of two separate sever-side APIs) that the user is able to interact with. 
 
-## How to Run
-Go to site: https://lindslewis.github.io/music-generator/
+One API allows the user to search for upcoming concerts based on artist name. The other API allows the user to search for discographies based on artist name. 
 
 ## How to Use
 
-When User opens the browser of the deployed site, they are presented with four separate media players. Each media player holds a playlist of songs compiled by the corresponding developer. The media players have buttons to help navigate through playlists. When a song is played, the name of the song is displayed at the top of the media player. If User wants to return to the home page than they click the "Return to Home" button. At the bottom of the browser page there are two text input windows. One text input box includes a placeholder prompt to "Enter Artist Name Here for Concert Info" with an associated "search" button. The second text input window includes a place holder prompt to "Enter Artist Here for Album Info" with an associated "search" button. When the User types in their search parameters and clicks the corresponding button then they will be directed to a new tab containing the information they requested. User can navigate back to the home page by clicking on the "Home" button. At the bottom of the home page there is a button titled "Click Here for Complete Playlist Information". Clicking this button will open up a new tab which contains information regarding each song and artist organized by the four separate playlist.
+When the User opens the browser to the deployed site, they are presented with four separate media players -- each of these media player holds a playlist of songs compiled by the corresponding developer. In order to go to player, the user must hit the desired playlist tab: 
+- "love with asiya"
+- "elevate with jovi"
+- "chill with stevie"
+- vibe with lindsay"
+
+The media players have previous/next/pause/play buttons, as well as a clickable progress bar, to navigate through the songs and/or playlists.
+
+When the song is playing, a pop up container with the name of the song/progress bar will show. As the song plays, the progress bar will increase. 
+
+At the bottom of the page, a button with the text "return home" will allow the user to return to the homepage, when clicked. 
+
+At the top of the homepage, in a nav-bar are the words "venture further", when clicked, this takes the user to the bottom of the homepage. At the bottom of the homepage are clickable/searchable text boxes. One prompts the user to "Enter Artist Name Here for Concert Info", or "Enter Artist Name Here for Album Info". When the user types in their request, the user will then be taken to a new tab, containing their requested information.
 
 <img src=./assets/images/browserHomePagejpg.jpg>
 <img src=./assets/images/mediaplayer.jpg>
@@ -23,51 +37,54 @@ When User opens the browser of the deployed site, they are presented with four s
 
 ## Known Bugs/Possible Future Edits
 
-Known bugs include the absence of edge case code for invalid input and null responses.
-Plans for future editing include: Rendering recent searches to the page from local storage,
-adding the ability to like songs from the playlists which could be stored and rendered to the page, adding musician names to the corresponding songs in the media players, increasing the number of songs per playlist and randomizing the order in which they are played.
+Known Bugs:
+- the absence of edge case code for invalid input(s)/null responses
+
+Plans for Future Editing:
+- rendering recent searches from page into local storage
+- ability to like songs from the playlist, to be stored and rendered to the page
+- adding the artist name(s) to the corresponding songs within the media players
+- increasing the amount of songs per playlist
+- randomization of the playlist 
 
 ## Credits and Resources
+<h1>API Resources</h1>
+Concerts - Artists Events Tracker
 
-### API resources
+    https://rapidapi.com/s.mahmoud97/api/concerts-artists-events-tracker/
 
-    Concerts - Artists Events Tracker
+The Audio DB
 
-        https://rapidapi.com/s.mahmoud97/api/concerts-artists-events-tracker/
-
-    The Audio DB
-
-        https://rapidapi.com/theaudiodb/api/theaudiodb/
-
-Media Player Resource
-
-    https://www.youtube.com/watch?v=QTHRWGn_sJw
-
-Styling Tools and Resources
-
-    https://www.color-hex.com/
-
-    https://coolors.co/
-
-    https://www.w3schools.com/howto/howto_css_glowing_text.asp
-
-    https://fontawesome.com/icons/heart?s=solid
-
-    https://bulma.io/
-
-    days.js
-
-    https://getcssscan.com/
-
-    https://fonts.google.com/
-
-        Lato
-
-        Montserrat
+    https://rapidapi.com/theaudiodb/api/theaudiodb/
 
 
-## Contributors
+<h1>Media Player Resources</h1>
+https://www.youtube.com/watch?v=QTHRWGn_sJw
+    -- @ Travery Media's Mini Player JS Mini Projects
 
+<h1>Styling Tools and Resources</h1>
+https://www.color-hex.com/
+
+https://coolors.co/
+
+https://www.w3schools.com/howto/howto_css_glowing_text.asp
+
+https://fontawesome.com/icons/heart?s=solid
+
+https://bulma.io/
+
+days.js
+
+https://getcssscan.com/
+    -- @ Linear's button 36
+
+https://fonts.google.com/
+
+    Lato
+
+    Montserrat
+
+<h1>Contributors</h1>
 Lindsay Lewis
 
 https://github.com/lindslewis
@@ -83,8 +100,3 @@ https://github.com/AsiyahAA
 Stevie Gomez
 
 https://github.com/smariagomez
-
-
-
-
-
