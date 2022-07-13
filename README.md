@@ -1,11 +1,11 @@
-## beats collective
+# beats collective
 
 ## Deployed Link
 https://lindslewis.github.io/music-generator/
 
 ## Project Description
 
-This project was a collabortive group effort based on the USER STORY outlined below:
+This project was a collabortive group effort based on the USER STORY outlined here:
 AS A music lover
 I WANT to be exposed to new music
 SO THAT I can expand my musical horizons
@@ -30,7 +30,10 @@ At the bottom of the page, a button with the text "return home" will allow the u
 
 At the top of the homepage, in a nav-bar are the words "venture further", when clicked, this takes the user to the bottom of the homepage. At the bottom of the homepage are clickable/searchable text boxes. One prompts the user to "Enter Artist Name Here for Concert Info", or "Enter Artist Name Here for Album Info". When the user types in their request, the user will then be taken to a new tab, containing their requested information.
 
-<img src=>
+<img src=./assets/images/browserHomePagejpg.jpg>
+<img src=./assets/images/mediaplayer.jpg>
+<img src=./assets/images/searchCapabilities.jpg>
+<img src=./assets/images/discographyList.jpg>
 
 ## Known Bugs/Possible Future Edits
 
