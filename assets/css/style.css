@@ -38,7 +38,17 @@
 /* the hero banner!!!! */
 .hero {
     position: relative;
-    background-image: url("../images/hero_banner.jpg");
+    background-image: url("../images/herobanner.png");
+    background-size: cover;
+    height: auto;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+}
+
+/* playlist html hero banner */
+.heroPlay {
+    position: relative;
+    background-image: url("../images/backgroundHex.jpg");
     background-size: cover;
     height: auto;
     background-attachment: scroll;
@@ -260,12 +270,12 @@ footer {
     margin: 3vh 0 0 2vw!important;
     border-radius: 10vh!important;
     box-shadow: 2vh 2vh 1vh var(--dark)!important;
-    background-color: var(--dark)!important;
+    background-color: var(--background)!important;
 }
 .resultsBox {
     border: none!important;
     box-shadow: none!important;
-    background: var(--dark)!important;
+    background: var(--background)!important;
     border-radius: 20vh 20vh 0 0!important;
 }
 .resultSub {
@@ -282,19 +292,13 @@ footer {
     border-radius: 0 0 10vh 10vh!important;
 }
 /* the text itself for the results from the user searches */
-/* .resultText {
-    position: relative;
-    color: var(--dark)!important;
-    font-weight: bold!important;
-    font-size: smaller!important;
-} */
 
 .resultText h2{
     color: var(--dark)!important;
     font-size: medium!important;
 }
 
-
+/* for the playlist html below*/
 
 /* week 6 mini proj for appending for style */
 /* bulma, just have them going into a specific html spot, style that spot regardless of me not seeing it, they'll inherit the style of their parent :) */
