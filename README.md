@@ -29,7 +29,7 @@ adding the ability to like songs from the playlists which could be stored and r
 
 ## Credits and Resources
 
-API resources
+### API resources
 
     Concerts - Artists Events Tracker
 
@@ -64,3 +64,27 @@ Styling Tools and Resources
         Lato
 
         Montserrat
+
+
+## Contributors
+
+Lindsay Lewis
+
+https://github.com/lindslewis
+
+Jovi Barrow
+
+https://github.com/yond3r
+
+Asiya Ahmed
+
+https://github.com/AsiyahAA
+
+Stevie Gomez
+
+https://github.com/smariagomez
+
+
+
+
+
