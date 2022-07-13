@@ -300,53 +300,54 @@ footer {
 
 /* for the playlist html below*/
 .playlistCon {
-    margin: 3vh!important;
+    margin: 0 auto!important;
 }
 
+/* card headers */
 .playHeaders {
     background: var(--background)!important;
+    justify-content: center!important;
 }
+/* card header text */
 .playName {
     color: white!important;
+    justify-content: center!important;
     -webkit-animation: glow 2s ease-in-out infinite alternate;
     -moz-animation: glow 2s ease-in-out infinite alternate;
     animation: glow 2s ease-in-out infinite alternate;
 }
+/* card body */
 .playBody {
     margin-top: 0!important;
     padding-top: 2vh!important;
 
 }
 
-.asiyaCard {
+/* ind card overall */
+.indCard {
     border-color: white!important;
     border-width: 1vh!important;
     border-radius: 5vh!important;
 }
 
-.joviCard {
-    border-color: white!important;
-    border-width: 1vh!important;
-    border-radius: 5vh!important;
-}
-
-.stevieCard {
-    border-color: white!important;
-    border-width: 1vh!important;
-    border-radius: 5vh!important;
-}
-
+/* titles of songs in cards */
 .songTitle {
     color: var(--dark)!important;
     margin-bottom: 1vh!important;
     margin-top: 1vh!important;
 }
 
+/* text for song artist in cards */
 .songArtist {
     color: var(--neonGlow)!important;
     padding-left: 5vh;
     margin-bottom: 2vh!important;
     font-weight: bold!important;
+}
+
+/* images in cards */
+.cardImg {
+    border-radius: 5vh 5vh 0 0!important;
 }
 
 
