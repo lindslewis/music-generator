@@ -324,6 +324,18 @@ footer {
     border-radius: 5vh!important;
 }
 
+.joviCard {
+    border-color: white!important;
+    border-width: 1vh!important;
+    border-radius: 5vh!important;
+}
+
+.stevieCard {
+    border-color: white!important;
+    border-width: 1vh!important;
+    border-radius: 5vh!important;
+}
+
 .songTitle {
     color: var(--dark)!important;
     margin-bottom: 1vh!important;
