@@ -2,16 +2,20 @@
 
 ## Project Description
 
-This project was a collabortive group effort based on the USER STORY outlined here:
+This project was a collaborative group effort based on the USER STORY outlined here:
 AS A music lover
 I WANT to be exposed to new music
 SO THAT I can expand my musical horizons
 
-This application is focused on introducing User to new songs and musical artists that they may enjoy. Through HTML, CSS, JavaScript, Bulma CSS framework, media players linked to music in MP3 format and the incorporation of two separate sever-side APIs the User is able to listen to songs/artists recommended by the web developers. There are two different APIs. One that allows User to search for upcoming concerts based on artist name and one that allows User to search complete discographies based on artist name.
+This application is focused on introducing User to new songs and musical artists they may enjoy. This was achieved through HTML, CSS, JavaScript, Bulma CSS framework, and media players linked to music in MP3 format.  Via two separate server-side APIs, the User is able to listen to songs/artists recommended by the web developers. One API allows User to search for upcoming concerts based on artist name, and the other allows User to search complete discographies based on artist name.
 
 ## How to Run
 Go to site: https://lindslewis.github.io/music-generator/
 
+## Table of Contents
+
+1. [## How to Use](## How to Use)
+2. 
 ## How to Use
 
 When User opens the browser of the deployed site, they are presented with four separate media players. Each media player holds a playlist of songs compiled by the corresponding developer. The media players have buttons to help navigate through playlists. When a song is played, the name of the song is displayed at the top of the media player. If User wants to return to the home page than they click the "Return to Home" button. At the bottom of the browser page there are two text input windows. One text input box includes a placeholder prompt to "Enter Artist Name Here for Concert Info" with an associated "search" button. The second text input window includes a place holder prompt to "Enter Artist Here for Album Info" with an associated "search" button. When the User types in their search parameters and clicks the corresponding button then they will be directed to a new tab containing the information they requested. User can navigate back to the home page by clicking on the "Home" button. At the bottom of the home page there is a button titled "Click Here for Complete Playlist Information". Clicking this button will open up a new tab which contains information regarding each song and artist organized by the four separate playlist.
