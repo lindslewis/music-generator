@@ -36,7 +36,7 @@
     box-sizing: border-box;
 }
 /* the hero banner!!!! */
-.hero {
+.mainHero {
     position: relative;
     background-image: url("../images/herobanner.png");
     background-size: cover;
@@ -153,6 +153,7 @@ body::before{
 }
 
 #mainPage {
+    justify-content: center;
     position: relative;
     padding: 2%;
     margin: 2%;
@@ -177,13 +178,13 @@ body::before{
 
 #concertSec {
     display: flex;
-    width: 600px;
+    width: 95%;
 }
 
 #albumSec {
     display: flex;
-    width: 600px;
-    /* width: 40vw; */
+    width: 95%;
+   
 }
 
 #disco {
@@ -197,6 +198,11 @@ body::before{
 #conContainer{
     border-left: 3px solid var(--light)!important;
 
+}
+
+#playlist-page{
+    border-radius: 50px!important;
+    padding: 2vh 4vh 2vh 4vh!important;
 }
 
 /* the footer information below */
@@ -220,15 +226,6 @@ footer {
     border-radius: 0 0 25px 25px;
 }
 
-.homeCon:hover {
-    background: var(--background)!important;
-    padding-right: 4vh;
-}
-
-.homeCon:hover span:after {
-    opacity: 1;
-    right: 0;
-}
 
 /* this is for the anchor link styling itself for the return to home buttons in the other html files */
 .homeConA {
@@ -239,28 +236,13 @@ footer {
     background: var(--background)!important;
     border: none!important;
     width: 15vh;
-    transition: all 0.5s;
 }
 
-.homeConA span {
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-}
-
-/* the after arrows are not quite right, come back to me!!!!! */
-.homeConA span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -1vh;
-    transition: 0.5s;
-}
 
 .cardCon {
     align-content: center!important;
     padding-top: 5vh;
+    padding-bottom:5vh;
 }
 /* card for the results from the user search */
 .apiCon {
@@ -350,8 +332,3 @@ footer {
     border-radius: 5vh 5vh 0 0!important;
 }
 
-
-
-/* week 6 mini proj for appending for style */
-/* bulma, just have them going into a specific html spot, style that spot regardless of me not seeing it, they'll inherit the style of their parent :) */
-/* 04 web apis activity 6 */

@@ -14,17 +14,12 @@ var playlistBtn = document.querySelector("#playlist-page")
 
 //function to open a new page during concert search with local storage set
 conBtn.addEventListener("click", search)
-
+console.log()
 function search(event) {
     event.preventDefault()
     if (searchInput.value > 0) {
         localStorage.setItem("sTerm", searchInput.value);
-
-
-        window.open(
-            'HTML/results.html',
-            '_blank'
-        )
+        window.open('HTML/results.html','_blank')
     }
 }
 
