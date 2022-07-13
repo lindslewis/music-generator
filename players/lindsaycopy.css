@@ -149,6 +149,7 @@
   border-style: none;
   box-sizing: border-box;
   color: #FFFFFF;
+  text-decoration: none;
   cursor: pointer;
   flex-shrink: 0;
   font-family: 'Lato',sans-serif;
