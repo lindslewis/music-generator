@@ -13,15 +13,16 @@ var playlistBtn = document.querySelector("#playlist-page")
 
 
 //function to open a new page during concert search with local storage set
+//edcase below in searchInput.value, needs adjusting, not currently working, breaks the button 
 conBtn.addEventListener("click", search)
 console.log()
 function search(event) {
     event.preventDefault()
-    if (searchInput.value > 0) {
+    // if (searchInput.value > 0) {
         localStorage.setItem("sTerm", searchInput.value);
         window.open('HTML/results.html','_blank')
     }
-}
+// }
 
 //function to open a new page during discography search with local storage set
 discoBtn.addEventListener("click", scanDisco)
