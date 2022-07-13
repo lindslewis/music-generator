@@ -14,6 +14,9 @@ const durTime = document.querySelector('#durTime');
 // Song titles -- via array -- several hours later and SEVERAL mistakes later, I am just now realing these need to be in quotes to play lol 
 const songs = ["Torn", "Done.","Two Black Cadillacs", "Blackbird", "Gold", "Location", "Love in the Dark", "Centuries", "Cruise", "Year 3000"];
 
+// Artist Titles --via array 
+// const artists = ["Natalie Imbruglia", "The Band Perry", "Carrie Underwood", "The Beatles", "Kiiara", "Khalid", "Adele", "Fall Out Boy", "Flordia Georgia Line", "Jonas Brothers"];
+
 // Keep track of song
 let songIndex = 9;
 
@@ -26,6 +29,7 @@ function loadSong(song) {
   title.innerText = song;
   audio.src = `music/${song}.mp3`;
 }
+
   // cover.src = `images/${song}.jpg`;
 
 // Play song

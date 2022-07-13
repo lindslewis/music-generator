@@ -51,7 +51,3 @@ playlistBtn.addEventListener("click", playListPage)
 //option to like song (Listener event click box)
 //if I like a song (could be if/ else if statements)
 //?local storaege and get item related to liked songs vs recent searches
-
-
-
-
